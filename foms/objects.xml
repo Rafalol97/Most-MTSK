@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd"
+             xmlns="http://standards.ieee.org/IEEE1516-2010"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--
+information source
+https://www.sisostds.org/Schemas.aspx
+example link
+https://www.sisostds.org/schemas/RestaurantFOMmodule.xml
+-->
+    <modelIdentification>
+        <name>Bridge simulation federation FOM</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <modificationDate>2021-05-02</modificationDate>
+        <securityClassification>Unclassified</securityClassification>
+        <purpose>To define an HLA object model for a bridge simulation federation</purpose>
+        <applicationDomain>Bridge simulation</applicationDomain>>
+        <poc>
+            <pocType>Author</pocType>
+            <pocName>Rafał Cichosz</pocName>
+            <pocOrg>WAT</pocOrg>
+            <pocEmail>rafal.cichosz@student.wat.edu.pl</pocEmail>
+        </poc>
+        <poc>
+            <pocType>Author</pocType>
+            <pocName>Kamil Wiśnieski</pocName>
+            <pocOrg>WAT</pocOrg>
+            <pocEmail>kamil.wisniewski@student.wat.edu.pl</pocEmail>
+        </poc>
+        <reference>
+            <type>Standalone</type>
+            <identification>NA</identification>
+        </reference>
+    </modelIdentification>
+    <objects>
+        <objectClass>
+            <name>HLAobjectRoot</name>
+            <objectClass>
+                <name>Order</name>
+                <sharing>PublishSubscribe</sharing>
+                <semantics>Specific items requested by a customer</semantics>
+            </objectClass>
+            <objectClass>
+                <name>Employee</name>
+                <sharing>Neither</sharing>
+                <semantics>A person working for the restaurant</semantics>
+                <attribute>
+                    <name>YearsOfService</name>
+                    <dataType>Years</dataType>
+                    <updateType>Periodic</updateType>
+                    <updateCondition>1/year</updateCondition>
+                    <ownership>DivestAcquire</ownership>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Number of years the employee has worked for the restaurant</semantics>
+                </attribute>
+                <objectClass>
+                    <name>Waiter</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <attribute>
+                        <name>Efficiency</name>
+                        <dataType>WaiterValue</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>Performance review</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>TimeStamp</order>
+                        <semantics>Efficiency rating of waiter</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Cheerfulness</name>
+                        <dataType>WaiterValue</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>Performance review</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>TimeStamp</order>
+                        <semantics>Cheerfulness of waiter</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>State</name>
+                        <dataType>WaiterTasks</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>Work flow</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>TimeStamp</order>
+                        <semantics>What the waiter is doing</semantics>
+                    </attribute>
+                </objectClass>
+            </objectClass>
+        </objectClass>
+    </objects>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+            <interactionClass>
+                <name>CustomerTransactions</name>
+                <sharing>Publish</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>TimeStamp</order>
+                <semantics>The base class of interactions between customers and employee</semantics>
+                <interactionClass>
+                    <name>CustomerSeated</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Customer has occupied a table</semantics>
+                </interactionClass>
+                <interactionClass>
+                    <name>OrderTaken</name>
+                    <sharing>Publish</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Waiter has taken customers order</semantics>
+                </interactionClass>
+                <interactionClass>
+                    <name>FoodServed</name>
+                    <sharing>Publish</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Waiter has served food</semantics>
+                    <interactionClass>
+                        <name>DrinkServed</name>
+                        <sharing>Publish</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>TimeStamp</order>
+                        <semantics>Waiter has served a drink</semantics>
+                    </interactionClass>
+                    <interactionClass>
+                        <name>MainCourseServed</name>
+                        <sharing>Publish</sharing>
+                        <dimensions>
+                            <dimension>WaiterId</dimension>
+                        </dimensions>
+                        <transportation>HLAreliable</transportation>
+                        <order>TimeStamp</order>
+                        <semantics>Waiter has served entree</semantics>
+                        <parameter>
+                            <name>TemperatureOk</name>
+                            <dataType>ServiceStat</dataType>
+                            <semantics>Whether the food was the correct temperature</semantics>
+                        </parameter>
+                        <parameter>
+                            <name>AccuracyOk</name>
+                            <dataType>ServiceStat</dataType>
+                            <semantics>Whether the correct food was served</semantics>
+                        </parameter>
+                        <parameter>
+                            <name>TimlinessOk</name>
+                            <dataType>HLAboolean</dataType>
+                            <semantics>Whether the food was served in a reasonable amount of time</semantics>
+                        </parameter>
+                    </interactionClass>
+                    <interactionClass>
+                        <name>DessertServed</name>
+                        <sharing>Publish</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>TimeStamp</order>
+                        <semantics>Waiter has served dessert</semantics>
+                    </interactionClass>
+                </interactionClass>
+            </interactionClass>
+        </interactionClass>
+    </interactions>
+    <dimensions>
+        <dimension>
+            <name>SodaFlavor</name>
+            <dataType>FlavorType</dataType>
+            <upperBound>3</upperBound>
+            <normalization>linearEnumerated (Flavor, [Cola, Orange, RootBeer])</normalization>
+            <value>[0..3)</value>
+        </dimension>
+        <dimension>
+            <name>BarQuantity</name>
+            <dataType>DrinkCount</dataType>
+            <upperBound>25</upperBound>
+            <normalization>linear (NumberCups, 1, 25)</normalization>
+            <value>[0)</value>
+        </dimension>
+        <dimension>
+            <name>WaiterId</name>
+            <dataType>EmplId</dataType>
+            <upperBound>20</upperBound>
+            <normalization>linear (WaiterId, 1, 20)</normalization>
+            <value>Excluded</value>
+        </dimension>
+    </dimensions>
+    <time>
+        <timeStamp>
+            <dataType>TimeType</dataType>
+            <semantics>Floating point value expressed in minutes</semantics>
+        </timeStamp>
+        <lookahead>
+            <dataType>LAType</dataType>
+            <semantics>Floating point value expressed in minutes (non-negative)</semantics>
+        </lookahead>
+    </time>
+    <tags>
+        <deleteRemoveTag>
+            <dataType>HLAASCIIstring</dataType>
+            <semantics>Reason for deletion</semantics>
+        </deleteRemoveTag>
+    </tags>
+    <synchronizations>
+        <synchronizationPoint>
+            <label>InitialPublish</label>
+            <capability>Achieve</capability>
+            <semantics>Achieved when all classes are published and subscribed, and all initially present objects are registered</semantics>
+        </synchronizationPoint>
+        <synchronizationPoint>
+            <label>InitialUpdate</label>
+            <capability>Achieve</capability>
+            <semantics>Achieved when instance attribute values for all initially present objects are updated</semantics>
+        </synchronizationPoint>
+        <synchronizationPoint>
+            <label>BeginTimeAdvance</label>
+            <capability>Achieve</capability>
+            <semantics>Achieved when time management services are invoked</semantics>
+        </synchronizationPoint>
+        <synchronizationPoint>
+            <label>PauseExecution</label>
+            <dataType>TimeType</dataType>
+            <capability>RegisterAchieve</capability>
+            <semantics>Achieved when the time advance after the time in the user-supplied tag is attained; time advance requests should then cease</semantics>
+        </synchronizationPoint>
+    </synchronizations>
+    <transportations>
+        <transportation>
+            <name>LowLatency</name>
+            <reliable>No</reliable>
+            <semantics>Choose the delivery mechanism that results in the lowest latency from service initiation to callback invocation at the receiving federate</semantics>
+        </transportation>
+    </transportations>
+    <switches>
+        <autoProvide isEnabled="true"/>
+        <conveyRegionDesignatorSets isEnabled="false"/>
+        <conveyProducingFederate isEnabled="false"/>
+        <attributeScopeAdvisory isEnabled="false"/>
+        <attributeRelevanceAdvisory isEnabled="false"/>
+        <objectClassRelevanceAdvisory isEnabled="true"/>
+        <interactionRelevanceAdvisory isEnabled="true"/>
+        <serviceReporting isEnabled="false"/>
+        <exceptionReporting isEnabled="false"/>
+        <delaySubscriptionEvaluation isEnabled="false"/>
+        <automaticResignAction resignAction="CancelThenDeleteThenDivest"/>
+    </switches>
+    <updateRates>
+        <updateRate>
+            <name>Low</name>
+            <rate>10.56</rate>
+        </updateRate>
+        <updateRate>
+            <name>Hi</name>
+            <rate>60.0</rate>
+        </updateRate>
+    </updateRates>
+    <dataTypes>
+        <basicDataRepresentations>
+            <basicData>
+                <name>UnsignedShort</name>
+                <size>16</size>
+                <interpretation>Integer in the range [0, 2^16 - 1]</interpretation>
+                <endian>Big</endian>
+                <encoding>16-bit unsigned integer.</encoding>
+            </basicData>
+        </basicDataRepresentations>
+        <simpleDataTypes>
+            <simpleData>
+                <name>TimeType</name>
+                <representation>HLAfloat32BE</representation>
+                <units>Minutes</units>
+                <resolution>0.01667</resolution>
+                <accuracy>NA</accuracy>
+                <semantics>Time representation</semantics>
+            </simpleData>
+        </simpleDataTypes>
+        <enumeratedDataTypes>
+            <enumeratedData>
+                <name>ExperienceLevel</name>
+                <representation>HLAinteger32BE</representation>
+                <semantics>Level of experience of waiters</semantics>
+                <enumerator>
+                    <name>Trainee</name>
+                    <value>0</value>
+                </enumerator>
+                <enumerator>
+                    <name>Apprentice</name>
+                    <value>1</value>
+                </enumerator>
+                <enumerator>
+                    <name>Journeyman</name>
+                    <value>2</value>
+                </enumerator>
+            </enumeratedData>
+        </enumeratedDataTypes>
+        <arrayDataTypes>
+            <arrayData>
+                <name>Employees</name>
+                <dataType>EmplId</dataType>
+                <cardinality>10</cardinality>
+                <encoding>HLAfixedArray</encoding>
+                <semantics>Identifiers of employees currently working</semantics>
+            </arrayData>
+        </arrayDataTypes>
+    </dataTypes>
+</objectModel>
