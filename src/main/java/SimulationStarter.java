@@ -16,6 +16,7 @@ public class SimulationStarter {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            System.out.println("test");
         }
     }
 }
