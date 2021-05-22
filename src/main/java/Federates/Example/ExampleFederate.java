@@ -200,9 +200,9 @@ public class ExampleFederate
         try
         {
             URL[] modules = new URL[]{
-                    (new File("foms/RestaurantProcesses.xml")).toURI().toURL(),
-                    (new File("foms/RestaurantFood.xml")).toURI().toURL(),
-                    (new File("foms/RestaurantDrinks.xml")).toURI().toURL()
+                    (new File("foms/general.xml")).toURI().toURL(),
+                    (new File("foms/interactions.xml")).toURI().toURL(),
+                    (new File("foms/objects.xml")).toURI().toURL()
             };
 
             rtiamb.createFederationExecution( "ExampleFederation", modules );
@@ -223,7 +223,7 @@ public class ExampleFederate
         // 4. join the federation //
         ////////////////////////////
         URL[] joinModules = new URL[]{
-                (new File("foms/RestaurantSoup.xml")).toURI().toURL()
+                (new File("foms/objects.xml")).toURI().toURL()
         };
 
         rtiamb.joinFederationExecution( federateName,            // name for the federate

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel
+        xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd"
+        xmlns="http://standards.ieee.org/IEEE1516-2010"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!--
+    information source
+    https://www.sisostds.org/Schemas.aspx
+    example link
+    https://www.sisostds.org/schemas/RestaurantFOMmodule.xml
+    -->
+    <modelIdentification>
+        <name>Bridge simulation federation FOM</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <modificationDate>2021-05-19</modificationDate>
+        <securityClassification>Unclassified</securityClassification>
+        <purpose>To pass the semester</purpose>
+        <applicationDomain>Bridge simulation</applicationDomain>>
+        <poc>
+            <pocType>Author</pocType>
+            <pocName>Rafał Cichosz</pocName>
+            <pocOrg>WAT</pocOrg>
+            <pocEmail>rafal.cichosz@student.wat.edu.pl</pocEmail>
+        </poc>
+        <poc>
+            <pocType>Author</pocType>
+            <pocName>Kamil Wiśnieski</pocName>
+            <pocOrg>WAT</pocOrg>
+            <pocEmail>kamil.wisniewski@student.wat.edu.pl</pocEmail>
+        </poc>
+        <reference>
+            <type>Standalone</type>
+            <identification>NA</identification>
+        </reference>
+    </modelIdentification>
+    <time>
+        <timeStamp>
+            <dataType>TimeType</dataType>
+            <semantics>Floating point value expressed in minutes</semantics>
+        </timeStamp>
+        <lookahead>
+            <dataType>LAType</dataType>
+            <semantics>Floating point value expressed in minutes (non-negative)</semantics>
+        </lookahead>
+    </time>
+    <tags>
+        <deleteRemoveTag>
+            <dataType>HLAASCIIstring</dataType>
+            <semantics>Reason for deletion</semantics>
+        </deleteRemoveTag>
+    </tags>
+    <synchronizations>
+        <synchronizationPoint>
+            <label>InitialPublish</label>
+            <capability>Achieve</capability>
+            <semantics>Achieved when all classes are published and subscribed, and all initially present objects are
+                registered
+            </semantics>
+        </synchronizationPoint>
+        <synchronizationPoint>
+            <label>InitialUpdate</label>
+            <capability>Achieve</capability>
+            <semantics>Achieved when instance attribute values for all initially present objects are updated</semantics>
+        </synchronizationPoint>
+        <synchronizationPoint>
+            <label>BeginTimeAdvance</label>
+            <capability>Achieve</capability>
+            <semantics>Achieved when time management services are invoked</semantics>
+        </synchronizationPoint>
+        <synchronizationPoint>
+            <label>PauseExecution</label>
+            <dataType>TimeType</dataType>
+            <capability>RegisterAchieve</capability>
+            <semantics>Achieved when the time advance after the time in the user-supplied tag is attained; time advance
+                requests should then cease
+            </semantics>
+        </synchronizationPoint>
+    </synchronizations>
+    <switches>
+        <autoProvide isEnabled="true"/>
+        <conveyRegionDesignatorSets isEnabled="false"/>
+        <conveyProducingFederate isEnabled="false"/>
+        <attributeScopeAdvisory isEnabled="false"/>
+        <attributeRelevanceAdvisory isEnabled="false"/>
+        <objectClassRelevanceAdvisory isEnabled="true"/>
+        <interactionRelevanceAdvisory isEnabled="true"/>
+        <serviceReporting isEnabled="false"/>
+        <exceptionReporting isEnabled="false"/>
+        <delaySubscriptionEvaluation isEnabled="false"/>
+        <automaticResignAction resignAction="CancelThenDeleteThenDivest"/>
+    </switches>
+    <updateRates>
+        <updateRate>
+            <name>Low</name>
+            <rate>10.56</rate>
+        </updateRate>
+        <updateRate>
+            <name>Hi</name>
+            <rate>60.0</rate>
+        </updateRate>
+    </updateRates>
+    <dataTypes>
+        <basicDataRepresentations>
+            <basicData>
+                <name>UnsignedShort</name>
+                <size>16</size>
+                <interpretation>Integer in the range [0, 2^16 - 1]</interpretation>
+                <endian>Big</endian>
+                <encoding>16-bit unsigned integer.</encoding>
+            </basicData>
+        </basicDataRepresentations>
+        <simpleDataTypes>
+            <simpleData>
+                <name>TimeType</name>
+                <representation>HLAfloat32BE</representation>
+                <units>Minutes</units>
+                <resolution>0.01667</resolution>
+                <accuracy>NA</accuracy>
+                <semantics>Time representation</semantics>
+            </simpleData>
+        </simpleDataTypes>
+    </dataTypes>
+</objectModel>

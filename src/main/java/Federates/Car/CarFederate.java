@@ -190,12 +190,12 @@ public class CarFederate
         try
         {
             URL[] modules = new URL[]{
-                    (new File("foms/RestaurantProcesses.xml")).toURI().toURL(),
-                    (new File("foms/RestaurantFood.xml")).toURI().toURL(),
-                    (new File("foms/RestaurantDrinks.xml")).toURI().toURL()
+                    (new File("foms/general.xml")).toURI().toURL(),
+                    (new File("foms/interactions.xml")).toURI().toURL(),
+                    (new File("foms/objects.xml")).toURI().toURL()
             };
 
-            rtiamb.createFederationExecution( "ExampleFederation", modules );
+            rtiamb.createFederationExecution( "BridgeFederation", modules );
             log( "Created Federation" );
         }
         catch( FederationExecutionAlreadyExists exists )
@@ -213,7 +213,7 @@ public class CarFederate
         // 4. join the federation //
         ////////////////////////////
         URL[] joinModules = new URL[]{
-                (new File("foms/RestaurantSoup.xml")).toURI().toURL()
+                (new File("foms/objects.xml")).toURI().toURL()
         };
 
         rtiamb.joinFederationExecution( federateName,            // name for the federate
@@ -318,7 +318,7 @@ public class CarFederate
         //       remain. in that case we'll leave it for them to clean up
         try
         {
-            rtiamb.destroyFederationExecution( "ExampleFederation" );
+            rtiamb.destroyFederationExecution( "BridgeFederation" );
             log( "Destroyed Federation" );
         }
         catch( FederationExecutionDoesNotExist dne )
@@ -388,49 +388,8 @@ public class CarFederate
      */
     private void publishAndSubscribe() throws RTIexception
     {
-        ///////////////////////////////////////////////
-        // publish all attributes of Food.Drink.Soda //
-        ///////////////////////////////////////////////
-        // before we can register instance of the object class Food.Drink.Soda and
-        // update the values of the various attributes, we need to tell the RTI
-        // that we intend to publish this information
-
-        // get all the handle information for the attributes of Food.Drink.Soda
-        this.sodaHandle = rtiamb.getObjectClassHandle( "HLAobjectRoot.Food.Drink.Soda" );
-        this.cupsHandle = rtiamb.getAttributeHandle( sodaHandle, "NumberCups" );
-        this.flavHandle = rtiamb.getAttributeHandle( sodaHandle, "Flavor" );
-        // package the information into a handle set
-        AttributeHandleSet attributes = rtiamb.getAttributeHandleSetFactory().create();
-        attributes.add( cupsHandle );
-        attributes.add( flavHandle );
-
-        // do the actual publication
-        rtiamb.publishObjectClassAttributes( sodaHandle, attributes );
-
-        ////////////////////////////////////////////////////
-        // subscribe to all attributes of Food.Drink.Soda //
-        ////////////////////////////////////////////////////
-        // we also want to hear about the same sort of information as it is
-        // created and altered in other federates, so we need to subscribe to it
-        rtiamb.subscribeObjectClassAttributes( sodaHandle, attributes );
-
-        //////////////////////////////////////////////////////////
-        // publish the interaction class FoodServed.DrinkServed //
-        //////////////////////////////////////////////////////////
-        // we want to send interactions of type FoodServed.DrinkServed, so we need
-        // to tell the RTI that we're publishing it first. We don't need to
-        // inform it of the parameters, only the class, making it much simpler
         String iname = "HLAinteractionRoot.CustomerTransactions.FoodServed.DrinkServed";
         servedHandle = rtiamb.getInteractionClassHandle( iname );
-
-        // do the publication
-        rtiamb.publishInteractionClass( servedHandle );
-
-        /////////////////////////////////////////////////////////
-        // subscribe to the FoodServed.DrinkServed interaction //
-        /////////////////////////////////////////////////////////
-        // we also want to receive other interaction of the same type that are
-        // sent out by other federates, so we have to subscribe to it first
         rtiamb.subscribeInteractionClass( servedHandle );
     }
 

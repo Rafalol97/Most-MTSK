@@ -1,0 +1,231 @@
+WARN  [Thread-8] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-6] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-9] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-5] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-7] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-4] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-5] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-4] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-8] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-7] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-9] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-6] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantProcesses.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantProcesses.xml (Nie można odnaleźć określonego pliku)
+WARN  [Thread-6] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-5] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-9] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-4] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-8] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-7] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-7] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-8] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-8] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-8] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-4] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-4] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-4] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-5] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-5] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-5] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-9] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-9] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-9] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+ERROR [Thread-6] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-6] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-6] portico.lrc: org.portico.lrc.compat.JCouldNotOpenFED: Error opening fed file from [file:/C:/Users/rafal/Desktop/Magisterskie/Sem1/MSK/Projekt/Most-MSTK/foms/RestaurantSoup.xml]: C:\Users\rafal\Desktop\Magisterskie\Sem1\MSK\Projekt\Most-MSTK\foms\RestaurantSoup.xml (Nie można odnaleźć określonego pliku)
+WARN  [Thread-5] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-9] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-8] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-6] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-4] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-7] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-6] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-6] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-8] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-8] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-7] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-7] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-4] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-4] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-5] portico.lrc.jgroups: FAILURE createFederation: already exists, name=ExampleFederation
+ERROR [Thread-5] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: ExampleFederation
+ERROR [Thread-0] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-4] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-2] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-5] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-9] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-6] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-8] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-1] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-3] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-7] portico.lrc: java.lang.NullPointerException
+WARN  [Thread-5] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-4] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-7] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-6] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-8] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-9] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-8] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-8] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-9] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-9] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-4] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-4] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-7] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-7] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-5] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-5] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-1] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-4] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-0] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-7] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-5] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-3] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-2] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-6] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-8] portico.lrc: java.lang.NullPointerException
+ERROR [Thread-9] portico.lrc: java.lang.NullPointerException
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-7] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-5] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-4] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-9] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-6] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-8] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-7] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-7] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-7] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 7]: already registered
+ERROR [Thread-7] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 7]: label already registered
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 3]: already announced
+ERROR [Thread-9] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-9] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-9] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 9]: already registered
+ERROR [Thread-9] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 9]: label already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 0]: already announced
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 1]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 1]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 2]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 2]: label already registered
+ERROR [Thread-6] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-6] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-6] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 6]: already registered
+ERROR [Thread-6] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 6]: label already registered
+ERROR [Thread-4] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-4] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-4] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 4]: already registered
+ERROR [Thread-4] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 4]: label already registered
+ERROR [Thread-5] portico.lrc.jgroups: FAILURE createFederation: already exists, name=CarFederation
+ERROR [Thread-5] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: CarFederation
+ERROR [Thread-5] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 5]: already registered
+ERROR [Thread-5] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 5]: label already registered
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-8] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-5] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-7] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-6] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-9] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-4] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-7] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-7] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-4] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-4] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-4] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 4]: already registered
+ERROR [Thread-4] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 4]: label already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 1]: already announced
+ERROR [Thread-8] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-8] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-8] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 8]: already registered
+ERROR [Thread-8] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 8]: label already registered
+ERROR [Thread-7] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 7]: already announced
+ERROR [Thread-9] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-9] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-9] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 9]: already registered
+ERROR [Thread-9] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 9]: label already registered
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 0]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 0]: label already registered
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 3]: already registered
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 3]: label already registered
+ERROR [Thread-5] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-5] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-5] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 5]: already registered
+ERROR [Thread-5] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 5]: label already registered
+ERROR [Thread-6] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-6] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-6] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [Client federate 6]: already registered
+ERROR [Thread-6] portico.lrc: FAILURE Register sync point [ReadyToRun] by [Client federate 6]: label already registered
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JRTIinternalError: Can't join a federation using a null or empty federate name
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JErrorReadingFED: First <interactionClass> must be HLAinteractionRoot, found: HLAInteractionRoot
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.

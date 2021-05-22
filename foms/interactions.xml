@@ -2,35 +2,58 @@
 <objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd"
              xmlns="http://standards.ieee.org/IEEE1516-2010"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <!--
-    information source
-    https://www.sisostds.org/Schemas.aspx
-    example link
-    https://www.sisostds.org/schemas/RestaurantFOMmodule.xml
-    -->
-    <modelIdentification>
-        <name>Bridge simulation federation FOM</name>
-        <type>FOM</type>
-        <version>1.0</version>
-        <modificationDate>2021-05-02</modificationDate>
-        <securityClassification>Unclassified</securityClassification>
-        <purpose>To define an HLA object model for a bridge simulation federation</purpose>
-        <applicationDomain>Bridge simulation</applicationDomain>>
-        <poc>
-            <pocType>Author</pocType>
-            <pocName>Rafał Cichosz</pocName>
-            <pocOrg>WAT</pocOrg>
-            <pocEmail>rafal.cichosz@student.wat.edu.pl</pocEmail>
-        </poc>
-        <poc>
-            <pocType>Author</pocType>
-            <pocName>Kamil Wiśnieski</pocName>
-            <pocOrg>WAT</pocOrg>
-            <pocEmail>kamil.wisniewski@student.wat.edu.pl</pocEmail>
-        </poc>
-        <reference>
-            <type>Standalone</type>
-            <identification>NA</identification>
-        </reference>
-    </modelIdentification>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+            <interactionClass>
+                <name>CarCalls</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>TimeStamp</order>
+                <semantics>Base class for car calls</semantics>
+                <interactionClass>
+                    <name>IWantToDriveThrough</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Car calls to drive through the bridge</semantics>
+                    <parameter>
+                        <name>carId</name>
+                        <dataType>Number</dataType>
+                        <semantics>Car's id number</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>directionId</name>
+                        <dataType>Number</dataType>
+                        <semantics>Direction that car is coming from</semantics>
+                    </parameter>
+                </interactionClass>
+                <interactionClass>
+                    <name>IEnteredTheBridge</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Car started driving through bridge</semantics>
+                    <parameter>
+                        <name>carId</name>
+                        <dataType>Number</dataType>
+                        <semantics>Car's id number</semantics>
+                    </parameter>
+                </interactionClass>
+                <interactionClass>
+                    <name>ILeftTheBridge</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Car has ended </semantics>
+                    <parameter>
+                        <name>carId</name>
+                        <dataType>Number</dataType>
+                        <semantics>Car's id number</semantics>
+                    </parameter>
+                </interactionClass>
+                <sharing></sharing>
+            </interactionClass>
+        </interactionClass>
+    </interactions>
 </objectModel>
