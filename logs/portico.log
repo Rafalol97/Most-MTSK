@@ -229,3 +229,11 @@ WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e
 WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
 WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
 WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [ExampleFederation]: doesn't exist
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: ExampleFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
