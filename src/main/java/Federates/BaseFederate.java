@@ -1,7 +1,7 @@
 package Federates;
 
-import Utilities.InteractionToBeSend;
-import Utilities.InteractionWithType;
+import Utils.InteractionToBeSend;
+import Utils.InteractionWithType;
 import hla.rti1516e.*;
 import hla.rti1516e.encoding.*;
 import hla.rti1516e.exceptions.*;
@@ -112,7 +112,7 @@ public class BaseFederate
 
         // connect
         log("Connecting...");
-        fedamb = new BaseFederateAmbassador(this);
+        fedamb = newFedAmb();
         rtiamb.connect(fedamb, CallbackModel.HLA_IMMEDIATE);  // deliver callbacks as soon as they arrive
         //rtiamb.connect( fedamb, CallbackModel.HLA_EVOKED );   // deliver callbacks when we call evoke
 
@@ -222,12 +222,13 @@ public class BaseFederate
             // 9.2 send an interaction
             //made this arrayList to contain all interactions to be send  put all interactions in this list and it will be send at closest sending
             //
+            toDoInEachIteration();
             ArrayList<InteractionToBeSend> tempInteractions = (ArrayList<InteractionToBeSend>) interactionsToSend.clone();
             interactionsToSend.clear();
             for (InteractionToBeSend interaction: tempInteractions) {
                 sendInteraction(interaction.getInteractionClassHandle(), interaction.getParameters());
             }
-            toDoInEachIteration();
+
 
             // 9.3 request a time advance and wait until we get it
             advanceTime(1.0);
@@ -269,7 +270,7 @@ public class BaseFederate
             e.printStackTrace();
         }
     }
-    protected void toDoInEachIteration(){
+    protected void toDoInEachIteration() throws RTIexception {
 
     }
     ////////////////////////////////////////////////////////////////////////////
@@ -436,6 +437,10 @@ public class BaseFederate
     protected byte[] generateTag()
     {
         return ("(timestamp) "+System.currentTimeMillis()).getBytes();
+    }
+
+    protected BaseFederateAmbassador newFedAmb(){
+        return new BaseFederateAmbassador(this);
     }
 
 

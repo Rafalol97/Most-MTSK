@@ -4,6 +4,7 @@ package Federates.Bridge;
 import Federates.BaseFederateAmbassador;
 import hla.rti1516e.*;
 import hla.rti1516e.exceptions.FederateInternalError;
+import hla.rti1516e.exceptions.RTIexception;
 import hla.rti1516e.time.HLAfloat64Time;
 
 public class BridgeFederateAmbassador extends BaseFederateAmbassador {
@@ -25,16 +26,16 @@ public class BridgeFederateAmbassador extends BaseFederateAmbassador {
             throws FederateInternalError {
         StringBuilder builder = new StringBuilder("Interaction Received:");
 
-///TODO
-//        // print the handle
+
+
 //        builder.append(" handle=" + interactionClass);
-//        if (interactionClass.equals(federate.getInteractionClassHandle("orderTaxiHandle"))) {
+//        if (interactionClass.equals(federate.getInteractionClassHandle("bridgeIsFree"))) {
 //            try {
-//                ((BridgeFederate) federate).receiveOrder(theParameters);
+//                ((Federates.Bridge.QueueFederate) federate).recieveFreeState(castParametersToString(theParameters, "bridgeIsFree"));
 //            } catch (RTIexception rtIexception) {
 //                rtIexception.printStackTrace();
 //            }
-//            builder.append(" (Taxi ordered)");
+//            builder.append(" (Bridge side is set free)");
 //        }
 
         // print the tag

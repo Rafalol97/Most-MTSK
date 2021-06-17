@@ -54,6 +54,74 @@
                 </interactionClass>
                 <sharing></sharing>
             </interactionClass>
+
+            <interactionClass>
+                <name>BridgeCalls</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>TimeStamp</order>
+                <semantics>Base class for bridge calls</semantics>
+                <interactionClass>
+                    <name>BridgeIsFree</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Bridge calls free</semantics>
+                    <parameter>
+                        <name>BridgeSide</name>
+                        <dataType>Number</dataType>
+                        <semantics>IdOfTheBridgeSide</semantics>
+                    </parameter>
+                </interactionClass>
+                <interactionClass>
+                    <name>StopQueue</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>BridgeCallsToStopTheQueue</semantics>
+                    <parameter>
+                        <name>BridgeSide</name>
+                        <dataType>Number</dataType>
+                        <semantics>IdOfTheBridgeSide</semantics>
+                    </parameter>
+                </interactionClass>
+                <sharing></sharing>
+            </interactionClass>
+
+            <interactionClass>
+                <name>QueueCalls</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>TimeStamp</order>
+                <semantics>Base class for Queue calls</semantics>
+                <interactionClass>
+                    <name>YouCanDriveThrough</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Bridge calls free</semantics>
+                    <parameter>
+                        <name>BridgeSide</name>
+                        <dataType>Number</dataType>
+                        <semantics>IdOfTheBridgeSide</semantics>
+                    </parameter>
+                </interactionClass>
+                <interactionClass>
+                    <name>YouHaveToStop</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>QueueCallsToStopTheCars</semantics>
+                    <parameter>
+                        <name>BridgeSide</name>
+                        <dataType>Number</dataType>
+                        <semantics>IdOfTheBridgeSide</semantics>
+                    </parameter>
+                </interactionClass>
+                <sharing></sharing>
+            </interactionClass>
+
+
         </interactionClass>
     </interactions>
 </objectModel>

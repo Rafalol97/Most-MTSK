@@ -1,4 +1,4 @@
-package Utilities;
+package Utils;
 
 import hla.rti1516e.InteractionClassHandle;
 import lombok.AllArgsConstructor;

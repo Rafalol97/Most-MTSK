@@ -81,7 +81,7 @@ public class BaseFederateAmbassador extends NullFederateAmbassador
     //----------------------------------------------------------
     protected void log( String message )
     {
-        System.out.println( "FederateAmbassador: " + message );
+        System.out.println( "FederateAmbassador: " + getFederateTime()+ "  " + message );
     }
 
     protected String decodeFlavor( byte[] bytes )
