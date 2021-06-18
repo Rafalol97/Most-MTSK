@@ -17,11 +17,11 @@ public class BridgeFederate extends BaseFederate{
         this.federateType = "BridgeFederateType";
     }
 
+
+
     public BridgeFederate()
     {
         super();
-
-
     }
 
     @Override

@@ -19,16 +19,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
+import static Utils.Constants.FEDERATION_NAME;
+import static Utils.Constants.MAX_ITERATIONS;
+
 
 @Getter
-public class BaseFederate
+public abstract class BaseFederate
 {
     //----------------------------------------------------------
     //                    STATIC VARIABLES
     //----------------------------------------------------------
-    /** The number of times we will update our attributes and send an interaction */
-    public static final int ITERATIONS = 20;
-
     /** The sync point all federates will sync up on before starting */
     public static final String READY_TO_RUN = "ReadyToRun";
 
@@ -129,7 +129,7 @@ public class BaseFederate
                     (new File("foms/general.xml")).toURI().toURL()
             };
 
-            rtiamb.createFederationExecution("BridgeFederation", modules);
+            rtiamb.createFederationExecution(FEDERATION_NAME, modules);
             log("Created Federation");
         } catch (FederationExecutionAlreadyExists exists) {
             log("Didn't create federation, it already existed");
@@ -146,9 +146,9 @@ public class BaseFederate
         };
 
         rtiamb.joinFederationExecution(federateName,            // name for the federate
-                federateType,   // federate type
-                "BridgeFederation",     // name of federation
-                joinModules);           // modules we want to add
+                federateType,                                   // federate type
+                FEDERATION_NAME,                                // name of federation
+                joinModules);                                   // modules we want to add
 
         log("Joined Federation as " + federateName);
 
@@ -215,7 +215,7 @@ public class BaseFederate
         // here is where we do the meat of our work. in each iteration, we will
         // update the attribute values of the object we registered, and will
         // send an interaction.
-        for (int i = 0; i < ITERATIONS; i++) {
+        for (int i = 0; i < MAX_ITERATIONS; i++) {
             // 9.1 update the attribute values of the instance //
             //updateAttributeValues(objectHandle);
 
@@ -253,7 +253,7 @@ public class BaseFederate
         // NOTE: we won't die if we can't do this because other federates
         //       remain. in that case we'll leave it for them to clean up
         try {
-            rtiamb.destroyFederationExecution("BridgeFederation");
+            rtiamb.destroyFederationExecution(FEDERATION_NAME);
             log("Destroyed Federation");
         } catch (FederationExecutionDoesNotExist dne) {
             log("No need to destroy federation, it doesn't exist");
@@ -270,9 +270,7 @@ public class BaseFederate
             e.printStackTrace();
         }
     }
-    protected void toDoInEachIteration() throws RTIexception {
 
-    }
     ////////////////////////////////////////////////////////////////////////////
     ////////////////////////////// Helper Methods //////////////////////////////
     ////////////////////////////////////////////////////////////////////////////
@@ -315,9 +313,7 @@ public class BaseFederate
      * be creating, and the types of data we are interested in hearing about as other
      * federates produce it.
      */
-    protected void addPublicationsAndSubscriptions() throws RTIexception {
-        //add interactions here to be added in publishAndSubscribe
-    }
+
     protected void addSubscription(String iName, String hName) throws FederateNotExecutionMember, NameNotFound, NotConnected, RTIinternalError {
         addInteractionClassHandle(hName, rtiamb.getInteractionClassHandle(iName), false, true);
     }
@@ -439,36 +435,8 @@ public class BaseFederate
         return ("(timestamp) "+System.currentTimeMillis()).getBytes();
     }
 
-    protected BaseFederateAmbassador newFedAmb(){
-        return new BaseFederateAmbassador(this);
-    }
-
-
-    public void initializeFederate(){
-
-    }
-
-    //----------------------------------------------------------
-    //                     STATIC METHODS
-    //----------------------------------------------------------
-    public static void main( String[] args )
-    {
-        // get a federate name, use "exampleFederate" as default
-        String federateName = "exampleFederate";
-        if( args.length != 0 )
-        {
-            federateName = args[0];
-        }
-
-        try
-        {
-            // run the example federate
-            new BaseFederate().runFederate( federateName );
-        }
-        catch( Exception rtie )
-        {
-            // an exception occurred, just log the information and exit
-            rtie.printStackTrace();
-        }
-    }
+    protected abstract void addPublicationsAndSubscriptions() throws RTIexception;
+    protected abstract BaseFederateAmbassador newFedAmb();
+    protected abstract void initializeFederate();
+    protected abstract void toDoInEachIteration() throws RTIexception;
 }
