@@ -101,9 +101,9 @@
                     <order>TimeStamp</order>
                     <semantics>Bridge calls free</semantics>
                     <parameter>
-                        <name>BridgeSide</name>
+                        <name>CarId</name>
                         <dataType>Number</dataType>
-                        <semantics>IdOfTheBridgeSide</semantics>
+                        <semantics>IdOfFisrtCarInQueue</semantics>
                     </parameter>
                 </interactionClass>
                 <interactionClass>

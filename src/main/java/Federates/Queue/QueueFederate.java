@@ -30,12 +30,11 @@ public class QueueFederate extends BaseFederate{
         addSubscription("HLAinteractionRoot.BridgeCalls.BridgeIsFree","bridgeIsFree");
     }
 
-    public void receiveFreeState(HashMap<String, String> parameters) throws RTIexception{
+    public void receiveFreeState(HashMap<String, String> parameters) throws RTIexception {
        String bridgeSide  = parameters.get("BridgeSide");
        String clientPhone = "", districtID = "";
        System.out.println("STRONA JEST WOLNA WOHHOO");
-
-   }
+    }
 
     @Override
     protected BaseFederateAmbassador newFedAmb(){

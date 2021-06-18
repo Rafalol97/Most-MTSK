@@ -1,4 +1,5 @@
 import Federates.Bridge.BridgeFederate;
+import Federates.Car.CarFederate;
 import Federates.Queue.QueueFederate;
 
 
@@ -9,8 +10,10 @@ public class SimulationStarter {
         initializer = new Thread(() -> BridgeFederate.main(new String[]{"BridgeFederator"}));
         initializer.start();
 
-
         initializer = new Thread(() -> QueueFederate.main(new String[]{"QueueFederator"}));
+        initializer.start();
+
+        initializer = new Thread(() -> CarFederate.main(new String[]{"CarFederator"}));
         initializer.start();
     }
 }
