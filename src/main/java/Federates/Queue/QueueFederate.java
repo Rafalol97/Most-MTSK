@@ -3,11 +3,25 @@ package Federates.Queue;
 import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
 import hla.rti1516e.exceptions.RTIexception;
+import models.Car;
+import models.CarViewModel;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 
 public class QueueFederate extends BaseFederate{
+
+    ArrayList<Integer> Queue1 = new ArrayList<>();
+    ArrayList<Integer> Queue2 = new ArrayList<>();
+
+    double currentSpeed = 0.0;
+    int currentSide;
+
+    ArrayList<CarViewModel> recivedCars = new ArrayList<>();
+
+    int currentQueue;
+    boolean bridgeIsFree = false;
 
     public void initializeFederate(){
         this.federateType = "QueueFederateType";
@@ -19,8 +33,37 @@ public class QueueFederate extends BaseFederate{
     }
 
     @Override
-    protected void toDoInEachIteration(){
+    protected void toDoInEachIteration() {
+        if(recivedCars.size() != 0)
+        {
+            for(CarViewModel car:recivedCars)
+            {
+                if(car.getSide() == 1)
+                    Queue1.add(car.getId());
+                else
+                    Queue2.add(car.getId());
+            }
+            recivedCars.clear();
+        }
+        if(bridgeIsFree)
+        {
+            if(currentSide == 1 && Queue1.size() != 0)
+            {
+                int carIdToStart = Queue1.get(0);
+                Queue1.remove(0);
 
+                //TODO wyślij id auta to wystartowania do carFederate
+            }
+            else if(Queue2.size() != 0)
+            {
+                int carIdToStart = Queue2.get(0);
+                Queue2.remove(0);
+
+                //TODO wyślij id auta to wystartowania do carFederate
+            }
+        }
+        else System.out.printf("");
+            //TODO wyslij do autFedereta reset lastCarSpeed
     }
 
     @Override

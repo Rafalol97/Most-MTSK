@@ -6,7 +6,7 @@ public class Constants {
     public static String FEDERATION_NAME = "BridgeFederation";
 
     //BRIDGE
-    public static double LIGHT_INTERVAL = 4.0;
+    public static int LIGHT_INTERVAL = 20;
     public static double bridgeLenght = 10.0;
 
     //GENERATE CARS
@@ -16,5 +16,4 @@ public class Constants {
     public static int maxCarsToGenerate = 10;
     public static double minCarSpeed = 2.0;
     public static double maxCarSpeed = 5.0;
-
 }

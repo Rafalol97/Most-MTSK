@@ -2,14 +2,12 @@ package Federates.Car;
 
 import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
-import Federates.Queue.QueueFederateAmbassador;
 import Utils.Constants;
 import Utils.InteractionToBeSend;
-import hla.rti1516e.FederateAmbassador;
-import hla.rti1516e.InteractionClassHandle;
-import hla.rti1516e.ParameterHandle;
 import hla.rti1516e.ParameterHandleValueMap;
 import hla.rti1516e.exceptions.RTIexception;
+import models.Car;
+import models.CarViewModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,6 +19,8 @@ public class CarFederate extends BaseFederate{
 
     public ArrayList<Car> cars = new ArrayList<>();
     public ArrayList<Integer> startedCarsIds = new ArrayList<>();
+
+    public ArrayList<Car> carsToSend = new ArrayList<>();
 
     double nextTimeToGenerateCars = 0.0;
     int howManyCarsToGenerate;
@@ -45,32 +45,35 @@ public class CarFederate extends BaseFederate{
         //GENERATE CARS
         if(this.fedamb.getFederateTime() > this.nextTimeToGenerateCars)
         {
+            ArrayList<CarViewModel> carsToSend = new ArrayList<>();
             this.nextTimeToGenerateCars += Constants.minAddTime + (Constants.maxAddTime- Constants.minAddTime) * randomizer.nextDouble();
             this.howManyCarsToGenerate = randomizer.nextInt(Constants.maxCarsToGenerate - Constants.minCarsToGenerate) + Constants.minCarsToGenerate;
             for(int i = 0; i < howManyCarsToGenerate; i++)
             {
-                cars.add(new Car(nextCarId, randomizer));
-                //TODO wyslij do kolejki Id nowego auto i jego strone
+                Car tmpCar = new Car(nextCarId, randomizer);
+                cars.add(tmpCar);
+                carsToSend.add(new CarViewModel(tmpCar.getId(), tmpCar.getSide()));
                 nextCarId++;
             }
+            //TODO wyslij do kolejki Id nowych aut i ich strony
         }
         if(carToRun != -1)
         {
             Car tmpCar = cars.get(carToRun);
 
-            if(tmpCar.speed < lastCarSpeed || lastCarSpeed == 0)
+            if(tmpCar.getSpeed() < lastCarSpeed || lastCarSpeed == 0)
             {
-                //TODO wyslij do kolejki predkosc autka (kolejka resetuje predkosc kiedy most powie jej STOP)
+                lastCarSpeed = tmpCar.getSpeed();
             }
             else
             {
-                tmpCar.speed = lastCarSpeed;
+                tmpCar.setSpeed(lastCarSpeed);
             }
 
             //TODO wyslij komunikat do mostu ze wjechalem na moscik
-            startedCarsIds.add(tmpCar.id);
-            tmpCar.started = true;
-            tmpCar.startedTime = this.fedamb.getFederateTime();
+            startedCarsIds.add(tmpCar.getId());
+            tmpCar.setStarted(true);
+            tmpCar.setStartedTime(this.fedamb.getFederateTime());
             carToRun = -1;
         }
         if(startedCarsIds.size() != 0)
@@ -79,12 +82,12 @@ public class CarFederate extends BaseFederate{
             {
                 int id = startedCarsIds.get(i);
                 Car tmpCar = cars.get(id);
-                tmpCar.currentState += tmpCar.speed;
-                if(tmpCar.currentState > Constants.bridgeLenght)
+                tmpCar.setCurrentState(tmpCar.getCurrentState() + tmpCar.getSpeed());
+                if(tmpCar.getCurrentState() > Constants.bridgeLenght)
                 {
                     //TODO wyslij do mostu ze skonczylem
-                    tmpCar.finished = true;
-                    tmpCar.finishedTime = this.fedamb.getFederateTime();
+                    tmpCar.setFinished(true);
+                    tmpCar.setFinishedTime(this.fedamb.getFederateTime());
                     startedCarsIds.remove(i);
                     i--;
                 }
@@ -135,25 +138,5 @@ public class CarFederate extends BaseFederate{
         {
             rtie.printStackTrace();
         }
-    }
-}
-
-class Car {
-    int id;
-    double speed;
-    int side;
-    double currentState = 0.0;
-
-    boolean started = false;
-    double startedTime = 0.0;
-
-    boolean finished = false;
-    double finishedTime = 0.0;
-
-    public Car(int id, Random randomizer)
-    {
-        this.id = id;
-        this.speed = Constants.minCarSpeed + (Constants.maxCarSpeed - Constants.minCarSpeed) * randomizer.nextDouble();
-        this.side = (int)Math.round(Math.random());
     }
 }

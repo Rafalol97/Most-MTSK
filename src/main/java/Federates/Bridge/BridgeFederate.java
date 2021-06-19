@@ -3,6 +3,7 @@ package Federates.Bridge;
 import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
 import Federates.Queue.QueueFederateAmbassador;
+import Utils.Constants;
 import Utils.InteractionToBeSend;
 import hla.rti1516e.FederateAmbassador;
 import hla.rti1516e.InteractionClassHandle;
@@ -13,11 +14,15 @@ import hla.rti1516e.exceptions.RTIexception;
 
 public class BridgeFederate extends BaseFederate{
 
+    int carsOnBridge = 0;
+
+    int lightsTimer = Constants.LIGHT_INTERVAL;
+
+    int currentLights = 0;
+
     public void initializeFederate(){
         this.federateType = "BridgeFederateType";
     }
-
-
 
     public BridgeFederate()
     {
@@ -26,8 +31,27 @@ public class BridgeFederate extends BaseFederate{
 
     @Override
     protected void toDoInEachIteration() throws RTIexception {
-        if(this.fedamb.getFederateTime()==4.0){
-            sendFreeState(1);
+        if(lightsTimer > 0  && carsOnBridge == 0)
+        {
+            //TODO WYSLI MOST WOLNY i KIERUNEK JAZDY
+        }
+        else if (lightsTimer == 0)
+        {
+            //TODO WYSLIJ STOP KOLEJKA
+        }
+        else if (lightsTimer < 0 && carsOnBridge == 0)
+        {
+            while(lightsTimer <= 0)
+            {
+                lightsTimer += Constants.LIGHT_INTERVAL;
+                currentLights ^= 1;
+            }
+        }
+
+        lightsTimer--;
+        if(lightsTimer < 0)
+        {
+            //TODO wyslij do stats i zapisz z czasem operacji
         }
     }
 
