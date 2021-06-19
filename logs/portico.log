@@ -465,3 +465,1153 @@ WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e
 WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
 ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-53368] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31598] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
 ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-31598] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-53368] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:45)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41005] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-1646] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41005] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1646] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41005] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41005] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1646] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-1646] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-4] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+ERROR [Thread-1] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at Federates.BaseFederateAmbassador.castParametersToString(BaseFederateAmbassador.java:332)
+	at Federates.Queue.QueueFederateAmbassador.receiveInteraction(QueueFederateAmbassador.java:47)
+	at Federates.BaseFederateAmbassador.receiveInteraction(BaseFederateAmbassador.java:272)
+	at org.portico.impl.hla1516e.handlers.ReceiveInteractionCallbackHandler.process(ReceiveInteractionCallbackHandler.java:102)
+	at org.portico.utils.messaging.MessageChain.process(MessageChain.java:78)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.tick(LRC.java:566)
+	at org.portico.impl.hla1516e.Impl1516eHelper.evokeMultiple(Impl1516eHelper.java:157)
+	at org.portico.impl.hla1516e.Rti1516eAmbassador.evokeMultipleCallbacks(Rti1516eAmbassador.java:5402)
+	at Federates.BaseFederate.advanceTime(BaseFederate.java:414)
+	at Federates.BaseFederate.runFederate(BaseFederate.java:234)
+	at Federates.Queue.QueueFederate.main(QueueFederate.java:125)
+	at SimulationStarter.lambda$main$1(SimulationStarter.java:13)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11617] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39614] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39614] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39320] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11617] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39320] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39320] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11617] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39614] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11617] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39320] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39614] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-5684] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-56882] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-56882] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-5684] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37625] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-5684] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37625] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37625] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-56882] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37625] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-5684] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37625] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35852] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14329] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-14329] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35852] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12500] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35852] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-14329] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12500] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12500] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14329] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35852] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12500] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52005] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-65370] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-65370] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33206] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33206] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-65370] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52005] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33206] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33206] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52005] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-65370] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52005] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-17851] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41160] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41160] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-60671] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41160] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-17851] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-60671] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-17851] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-17851] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-60671] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-60671] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41160] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-24878] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42156] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42156] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-24878] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8159] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42156] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1660] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39050] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-6163] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-1660] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39050] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-1660] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1660] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6163] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39050] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6163] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-6163] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39050] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42475] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-8094] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8094] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42475] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8094] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50154] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42475] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50154] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50154] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42475] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50154] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-8094] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-63600] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-1359] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1359] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25092] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-63600] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25092] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25092] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-63600] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1359] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-63600] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25092] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-1359] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-47291] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25830] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25830] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-27187] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27187] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-47291] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27187] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25830] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25830] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-47291] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-47291] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-27187] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-5] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1445)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1469)
+	at org.portico.lrc.services.time.data.TimeManager.recalculateLBTS(TimeManager.java:100)
+	at org.portico.lrc.services.time.handlers.incoming.TimeAdvanceRequestIncomingHandler.process(TimeAdvanceRequestIncomingHandler.java:63)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25640] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25640] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37701] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37701] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37701] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25640] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8212] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37701] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25640] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37701] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8212] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25640] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...

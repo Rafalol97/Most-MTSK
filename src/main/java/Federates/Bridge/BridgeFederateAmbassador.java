@@ -28,15 +28,23 @@ public class BridgeFederateAmbassador extends BaseFederateAmbassador {
 
 
 
-//        builder.append(" handle=" + interactionClass);
-//        if (interactionClass.equals(federate.getInteractionClassHandle("bridgeIsFree"))) {
-//            try {
-//                ((Federates.Bridge.QueueFederate) federate).recieveFreeState(castParametersToString(theParameters, "bridgeIsFree"));
-//            } catch (RTIexception rtIexception) {
-//                rtIexception.printStackTrace();
-//            }
-//            builder.append(" (Bridge side is set free)");
-//        }
+        builder.append(" handle=" + interactionClass);
+        if (interactionClass.equals(federate.getInteractionClassHandle("iEnteredTheBridge").getInteraction())) {
+            try {
+                ((Federates.Bridge.BridgeFederate) federate).increaseCarsOnBridge(castParametersToString(theParameters, "iEnteredTheBridge"));
+            } catch (RTIexception rtIexception) {
+                rtIexception.printStackTrace();
+            }
+            //builder.append(" (Bridge side is set free)");
+        }
+        else if (interactionClass.equals(federate.getInteractionClassHandle("iLeftTheBridge").getInteraction())) {
+            try {
+                ((Federates.Bridge.BridgeFederate) federate).decreaseCarsOnBridge(castParametersToString(theParameters, "iLeftTheBridge"));
+            } catch (RTIexception rtIexception) {
+                rtIexception.printStackTrace();
+            }
+            //builder.append(" (Bridge side is set free)");
+        }
 
         // print the tag
         builder.append(", tag=" + new String(tag));
@@ -60,6 +68,6 @@ public class BridgeFederateAmbassador extends BaseFederateAmbassador {
             builder.append("\n");
         }
 
-        log(builder.toString());
+        //log(builder.toString());
     }
 }

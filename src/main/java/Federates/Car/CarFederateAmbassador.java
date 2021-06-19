@@ -29,9 +29,17 @@ public class CarFederateAmbassador extends BaseFederateAmbassador {
 
 
         builder.append(" handle=" + interactionClass);
-        if (interactionClass.equals(federate.getInteractionClassHandle("youCanDriveThrough"))) {
+        if (interactionClass.equals(federate.getInteractionClassHandle("youCanDriveThrough").getInteraction())) {
             try {
                 ((Federates.Car.CarFederate) federate).carWithIdCanGo(castParametersToString(theParameters, "youCanDriveThrough"));
+            } catch (RTIexception rtIexception) {
+                rtIexception.printStackTrace();
+            }
+            builder.append(" (Bridge side is set free)");
+        }
+        else if (interactionClass.equals(federate.getInteractionClassHandle("resetLastSpeed").getInteraction())) {
+            try {
+                ((Federates.Car.CarFederate) federate).resetDirection(castParametersToString(theParameters, "resetLastSpeed"));
             } catch (RTIexception rtIexception) {
                 rtIexception.printStackTrace();
             }
@@ -60,6 +68,6 @@ public class CarFederateAmbassador extends BaseFederateAmbassador {
             builder.append("\n");
         }
 
-        log(builder.toString());
+        //log(builder.toString());
     }
 }

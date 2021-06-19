@@ -11,6 +11,8 @@ import hla.rti1516e.ParameterHandle;
 import hla.rti1516e.ParameterHandleValueMap;
 import hla.rti1516e.exceptions.RTIexception;
 
+import java.util.HashMap;
+
 
 public class BridgeFederate extends BaseFederate{
 
@@ -33,22 +35,25 @@ public class BridgeFederate extends BaseFederate{
     protected void toDoInEachIteration() throws RTIexception {
         if(lightsTimer > 0  && carsOnBridge == 0)
         {
-            //TODO WYSLI MOST WOLNY i KIERUNEK JAZDY
+            logMe("MOST: wysylam status wolnego mostu z idkierunku: " + currentLights);
+            sendFreeState(currentLights); //WYSLI MOST WOLNY i KIERUNEK JAZDY
         }
         else if (lightsTimer == 0)
         {
-            //TODO WYSLIJ STOP KOLEJKA
+            logMe("MOST: wysylam status zajetego mostu");
+            sendStopQueue(); //WYSLIJ STOP KOLEJKA
         }
         else if (lightsTimer < 0 && carsOnBridge == 0)
         {
+            logMe("MOST: resetuje zegar z: " + lightsTimer);
             while(lightsTimer <= 0)
             {
                 lightsTimer += Constants.LIGHT_INTERVAL;
                 currentLights ^= 1;
             }
         }
-
         lightsTimer--;
+
         if(lightsTimer < 0)
         {
             //TODO wyslij do stats i zapisz z czasem operacji
@@ -60,6 +65,16 @@ public class BridgeFederate extends BaseFederate{
         addPublication("HLAinteractionRoot.BridgeCalls.BridgeIsFree", "bridgeIsFree");
         addPublication("HLAinteractionRoot.BridgeCalls.StopQueue", "stopQueue");
 
+        addSubscription("HLAinteractionRoot.CarCalls.IEnteredTheBridge", "iEnteredTheBridge");
+        addSubscription("HLAinteractionRoot.CarCalls.ILeftTheBridge", "iLeftTheBridge");
+    }
+
+    public void increaseCarsOnBridge(HashMap<String, String> parameters) throws RTIexception {
+        carsOnBridge++;
+    }
+
+    public void decreaseCarsOnBridge(HashMap<String, String> parameters) throws RTIexception {
+        carsOnBridge--;
     }
 
     private void sendFreeState(Integer bridgeSide) throws RTIexception{
@@ -67,7 +82,12 @@ public class BridgeFederate extends BaseFederate{
         byte[] bridgeSideBytes = encoderFactory.createHLAASCIIstring(bridgeSide.toString()).toByteArray();
         parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("bridgeIsFree").getInteraction(),"BridgeSide"),bridgeSideBytes);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("bridgeIsFree").getInteraction(),parameters));
-        System.out.println("InformationSent");
+        //System.out.println("InformationSent");
+    }
+
+    private void sendStopQueue() throws RTIexception{
+        ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(1);
+        interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("stopQueue").getInteraction(),parameters));
     }
 
     @Override

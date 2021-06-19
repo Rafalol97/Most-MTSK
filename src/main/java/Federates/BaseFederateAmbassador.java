@@ -63,7 +63,7 @@ public class BaseFederateAmbassador extends NullFederateAmbassador
 
     protected void log( String message )
     {
-        System.out.println( "FederateAmbassador: " + getFederateTime()+ "  " + message );
+        System.out.println( getFederateTime()+ "  " + message );
     }
 
     protected String decodeFlavor( byte[] bytes )
@@ -254,7 +254,7 @@ public class BaseFederateAmbassador extends NullFederateAmbassador
             builder.append( "\n" );
         }
 
-        log( builder.toString() );
+        //log( builder.toString() );
     }
 
     @Override
@@ -323,7 +323,7 @@ public class BaseFederateAmbassador extends NullFederateAmbassador
             builder.append( "\n" );
         }
 
-        log( builder.toString() );
+        //log( builder.toString() );
     }
 
     public HashMap<String, String> castParametersToString(ParameterHandleValueMap theParameters, String iName) throws RTIexception{

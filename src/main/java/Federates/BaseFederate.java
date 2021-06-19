@@ -80,6 +80,10 @@ public abstract class BaseFederate
     protected void log(String message) {
         System.out.println(federateName+"\t: " + message);
     }
+
+    protected void logMe(String message) {
+        System.out.println(fedamb.getFederateTime() + "\t: " + message);
+    }
     /**This method will block until the user presses enter*/
     protected void waitForUser() {
         log(" >>>>>>>>>> Press Enter to Continue <<<<<<<<<<");
@@ -232,7 +236,7 @@ public abstract class BaseFederate
 
             // 9.3 request a time advance and wait until we get it
             advanceTime(1.0);
-            log("Time Advanced to " + fedamb.getFederateTime());
+            //log("Time Advanced to " + fedamb.getFederateTime()); //TODO
         }
 
         //////////////////////////////////////

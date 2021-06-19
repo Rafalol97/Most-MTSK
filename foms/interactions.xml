@@ -12,19 +12,19 @@
                 <order>TimeStamp</order>
                 <semantics>Base class for car calls</semantics>
                 <interactionClass>
-                    <name>IWantToDriveThrough</name>
+                    <name>WeWantToDriveThrough</name>
                     <sharing>PublishSubscribe</sharing>
                     <transportation>HLAreliable</transportation>
                     <order>TimeStamp</order>
                     <semantics>Car calls to drive through the bridge</semantics>
                     <parameter>
-                        <name>carId</name>
-                        <dataType>Number</dataType>
+                        <name>carIds</name>
+                        <dataType>String</dataType>
                         <semantics>Car's id number</semantics>
                     </parameter>
                     <parameter>
-                        <name>directionId</name>
-                        <dataType>Number</dataType>
+                        <name>directionIds</name>
+                        <dataType>String</dataType>
                         <semantics>Direction that car is coming from</semantics>
                     </parameter>
                 </interactionClass>
@@ -34,11 +34,6 @@
                     <transportation>HLAreliable</transportation>
                     <order>TimeStamp</order>
                     <semantics>Car started driving through bridge</semantics>
-                    <parameter>
-                        <name>carId</name>
-                        <dataType>Number</dataType>
-                        <semantics>Car's id number</semantics>
-                    </parameter>
                 </interactionClass>
                 <interactionClass>
                     <name>ILeftTheBridge</name>
@@ -46,11 +41,6 @@
                     <transportation>HLAreliable</transportation>
                     <order>TimeStamp</order>
                     <semantics>Car has ended </semantics>
-                    <parameter>
-                        <name>carId</name>
-                        <dataType>Number</dataType>
-                        <semantics>Car's id number</semantics>
-                    </parameter>
                 </interactionClass>
                 <sharing></sharing>
             </interactionClass>
@@ -79,11 +69,6 @@
                     <transportation>HLAreliable</transportation>
                     <order>TimeStamp</order>
                     <semantics>BridgeCallsToStopTheQueue</semantics>
-                    <parameter>
-                        <name>BridgeSide</name>
-                        <dataType>Number</dataType>
-                        <semantics>IdOfTheBridgeSide</semantics>
-                    </parameter>
                 </interactionClass>
                 <sharing></sharing>
             </interactionClass>
@@ -107,16 +92,11 @@
                     </parameter>
                 </interactionClass>
                 <interactionClass>
-                    <name>YouHaveToStop</name>
+                    <name>ResetLastSpeed</name>
                     <sharing>PublishSubscribe</sharing>
                     <transportation>HLAreliable</transportation>
                     <order>TimeStamp</order>
-                    <semantics>QueueCallsToStopTheCars</semantics>
-                    <parameter>
-                        <name>BridgeSide</name>
-                        <dataType>Number</dataType>
-                        <semantics>IdOfTheBridgeSide</semantics>
-                    </parameter>
+                    <semantics>ChangeDirectionOnBridge</semantics>
                 </interactionClass>
                 <sharing></sharing>
             </interactionClass>

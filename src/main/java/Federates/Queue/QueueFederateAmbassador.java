@@ -32,7 +32,23 @@ public class QueueFederateAmbassador extends BaseFederateAmbassador {
             } catch (RTIexception rtIexception) {
                 rtIexception.printStackTrace();
             }
-            builder.append(" (Bridge side is set free)");
+            //builder.append(" (Bridge side is set free)");
+        }
+        else if (interactionClass.equals(federate.getInteractionClassHandle("stopQueue").getInteraction())) {
+            try {
+                ((QueueFederate) federate).receiveStopQueue(castParametersToString(theParameters, "stopQueue"));
+            } catch (RTIexception rtIexception) {
+                rtIexception.printStackTrace();
+            }
+            //builder.append(" (Bridge side is set free)");
+        }
+        else if (interactionClass.equals(federate.getInteractionClassHandle("weWantToDriveThrough").getInteraction())) {
+            try {
+                ((QueueFederate) federate).receiveCars(castParametersToString(theParameters, "weWantToDriveThrough"));
+            } catch (RTIexception rtIexception) {
+                rtIexception.printStackTrace();
+            }
+            //builder.append(" (Bridge side is set free)");
         }
 
         // print the tag
@@ -57,6 +73,6 @@ public class QueueFederateAmbassador extends BaseFederateAmbassador {
             builder.append("\n");
         }
 
-        log(builder.toString());
+        //log(builder.toString());
     }
 }
