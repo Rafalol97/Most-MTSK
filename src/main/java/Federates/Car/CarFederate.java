@@ -33,8 +33,6 @@ public class CarFederate extends BaseFederate{
         this.federateType = "CarFederateType";
     }
 
-
-
     public CarFederate()
     {
         super();
@@ -139,29 +137,6 @@ public class CarFederate extends BaseFederate{
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("iLeftTheBridge").getInteraction(),parameters));
     }
 
-    @Override
-    protected BaseFederateAmbassador newFedAmb(){
-        return new CarFederateAmbassador(this);
-    }
-
-    public static void main( String[] args )
-    {
-        // get a federate name, use "exampleFederate" as default
-        String federateName = "exampleFederate";
-        if( args.length != 0 )
-        {
-            federateName = args[0];
-        }
-        try
-        {
-            new CarFederate().runFederate( federateName );
-        }
-        catch( Exception rtie )
-        {
-            rtie.printStackTrace();
-        }
-    }
-
     public ArrayList<String> makeStrings(ArrayList<CarViewModel> cars)
     {
         ArrayList<String> carsToSend = new ArrayList<>();
@@ -179,5 +154,29 @@ public class CarFederate extends BaseFederate{
         carsToSend.add(tmpSidesListString.substring(1, tmpSidesListString.length() - 1));
         return carsToSend;
     }
+
+    @Override
+    protected BaseFederateAmbassador newFedAmb(){
+        return new CarFederateAmbassador(this);
+    }
+
+    public static void main( String[] args )
+    {
+        String federateName = "exampleFederate";
+        if( args.length != 0 )
+        {
+            federateName = args[0];
+        }
+        try
+        {
+            new CarFederate().runFederate( federateName );
+        }
+        catch( Exception rtie )
+        {
+            rtie.printStackTrace();
+        }
+    }
+
+
 
 }

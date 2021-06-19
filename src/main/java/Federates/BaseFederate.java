@@ -172,90 +172,33 @@ public abstract class BaseFederate
             System.out.println("Still waiting for announce");
         }
 
-        // WAIT FOR USER TO KICK US OFF
-        // So that there is time to add other federates, we will wait until the
-        // user hits enter before proceeding. That was, you have time to start
-        // other federates.
-        waitForUser();
-
-        ///////////////////////////////////////////////////////
-        // 6. achieve the point and wait for synchronization //
-        ///////////////////////////////////////////////////////
-        // tell the RTI we are ready to move past the sync point and then wait
-        // until the federation has synchronized on
         rtiamb.synchronizationPointAchieved(READY_TO_RUN);
         log("Achieved sync point: " + READY_TO_RUN + ", waiting for federation...");
         while (!fedamb.isReadyToRun()) {
             rtiamb.evokeMultipleCallbacks(0.1, 0.2);
         }
 
-        /////////////////////////////
-        // 7. enable time policies //
-        /////////////////////////////
-        // in this section we enable/disable all time policies
-        // note that this step is optional!
         enableTimePolicy();
         log("Time Policy Enabled");
 
-        //////////////////////////////
-        // 8. publish and subscribe //
-        //////////////////////////////
-        // in this section we tell the RTI of all the data we are going to
-        // produce, and all the data we want to know about
         addPublicationsAndSubscriptions();
         publishAndSubscribe();
 
         log("Published and Subscribed");
-
-        /////////////////////////////////////
-        // 9. register an object to update //
-        /////////////////////////////////////
-        //ObjectInstanceHandle objectHandle = registerObject();
-        //log("Registered Object, handle=" + objectHandle);
-
-        /////////////////////////////////////
-        // 10. do the main simulation loop //
-        /////////////////////////////////////
-        // here is where we do the meat of our work. in each iteration, we will
-        // update the attribute values of the object we registered, and will
-        // send an interaction.
         for (int i = 0; i < MAX_ITERATIONS; i++) {
-            // 9.1 update the attribute values of the instance //
-            //updateAttributeValues(objectHandle);
-
-            // 9.2 send an interaction
-            //made this arrayList to contain all interactions to be send  put all interactions in this list and it will be send at closest sending
-            //
             toDoInEachIteration();
+
             ArrayList<InteractionToBeSend> tempInteractions = (ArrayList<InteractionToBeSend>) interactionsToSend.clone();
             interactionsToSend.clear();
             for (InteractionToBeSend interaction: tempInteractions) {
                 sendInteraction(interaction.getInteractionClassHandle(), interaction.getParameters());
             }
 
-
-            // 9.3 request a time advance and wait until we get it
             advanceTime(1.0);
-            //log("Time Advanced to " + fedamb.getFederateTime()); //TODO
         }
 
-        //////////////////////////////////////
-        // 11. delete the object we created //
-        //////////////////////////////////////
-        //deleteObject(objectHandle);
-        //log("Deleted Object, handle=" + objectHandle);
-
-        ////////////////////////////////////
-        // 12. resign from the federation //
-        ////////////////////////////////////
         rtiamb.resignFederationExecution(ResignAction.DELETE_OBJECTS);
         log("Resigned from Federation");
-
-        ////////////////////////////////////////
-        // 13. try and destroy the federation //
-        ////////////////////////////////////////
-        // NOTE: we won't die if we can't do this because other federates
-        //       remain. in that case we'll leave it for them to clean up
         try {
             rtiamb.destroyFederationExecution(FEDERATION_NAME);
             log("Destroyed Federation");
@@ -265,7 +208,6 @@ public abstract class BaseFederate
             log("Didn't destroy federation, federates still joined");
         }
 
-        // disconnect
         try {
             rtiamb.disconnect();
             log("Disconnected");

@@ -2,12 +2,8 @@ package Federates.Bridge;
 
 import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
-import Federates.Queue.QueueFederateAmbassador;
 import Utils.Constants;
 import Utils.InteractionToBeSend;
-import hla.rti1516e.FederateAmbassador;
-import hla.rti1516e.InteractionClassHandle;
-import hla.rti1516e.ParameterHandle;
 import hla.rti1516e.ParameterHandleValueMap;
 import hla.rti1516e.exceptions.RTIexception;
 
@@ -82,7 +78,6 @@ public class BridgeFederate extends BaseFederate{
         byte[] bridgeSideBytes = encoderFactory.createHLAASCIIstring(bridgeSide.toString()).toByteArray();
         parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("bridgeIsFree").getInteraction(),"BridgeSide"),bridgeSideBytes);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("bridgeIsFree").getInteraction(),parameters));
-        //System.out.println("InformationSent");
     }
 
     private void sendStopQueue() throws RTIexception{
@@ -97,7 +92,6 @@ public class BridgeFederate extends BaseFederate{
 
     public static void main( String[] args )
     {
-        // get a federate name, use "exampleFederate" as default
         String federateName = "exampleFederate";
         if( args.length != 0 )
         {

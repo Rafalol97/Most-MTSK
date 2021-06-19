@@ -30,7 +30,6 @@ public class QueueFederate extends BaseFederate{
 
     public QueueFederate() throws RTIexception {
         super();
-
     }
 
     @Override
@@ -109,15 +108,26 @@ public class QueueFederate extends BaseFederate{
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("resetLastSpeed").getInteraction(),parameters));
     }
 
+    public ArrayList<CarViewModel> makeCarsViewModel(String carIdsString, String directionIdsString)
+    {
+        ArrayList<CarViewModel> receivedCars = new ArrayList<>();
+
+        String[] carsIds = carIdsString.split(",");
+        String[] directionIds = directionIdsString.split(",");
+
+        for(int i = 0; i < carsIds.length; i++) {
+            receivedCars.add(new CarViewModel(Integer.parseInt(carsIds[i].trim()), Integer.parseInt(directionIds[i].trim())));
+        }
+        return receivedCars;
+    }
+
     @Override
     protected BaseFederateAmbassador newFedAmb(){
         return new QueueFederateAmbassador(this);
     }
 
-
     public static void main( String[] args )
     {
-        // get a federate name, use "exampleFederate" as default
         String federateName = "exampleFederate";
         if( args.length != 0 )
         {
@@ -131,18 +141,5 @@ public class QueueFederate extends BaseFederate{
         {
             rtie.printStackTrace();
         }
-    }
-
-    public ArrayList<CarViewModel> makeCarsViewModel(String carIdsString, String directionIdsString)
-    {
-        ArrayList<CarViewModel> receivedCars = new ArrayList<>();
-
-        String[] carsIds = carIdsString.split(",");
-        String[] directionIds = directionIdsString.split(",");
-
-        for(int i = 0; i < carsIds.length; i++) {
-            receivedCars.add(new CarViewModel(Integer.parseInt(carsIds[i].trim()), Integer.parseInt(directionIds[i].trim())));
-        }
-        return receivedCars;
     }
 }
