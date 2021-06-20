@@ -12,6 +12,7 @@ import models.CarViewModel;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 
 public class CarFederate extends BaseFederate{
@@ -19,9 +20,7 @@ public class CarFederate extends BaseFederate{
 
     public ArrayList<Car> cars = new ArrayList<>();
     public ArrayList<Integer> startedCarsIds = new ArrayList<>();
-
-    public ArrayList<Car> carsToSend = new ArrayList<>();
-
+    public ArrayList<String> carsToSendStrings;
     double nextTimeToGenerateCars = 0.0;
     int howManyCarsToGenerate;
     int nextCarId = 0;
@@ -54,7 +53,7 @@ public class CarFederate extends BaseFederate{
                 carsToSend.add(new CarViewModel(tmpCar.getId(), tmpCar.getSide()));
                 nextCarId++;
             }
-            ArrayList<String> carsToSendStrings = makeStrings(carsToSend);
+            carsToSendStrings = makeStrings(carsToSend);
             sentCarsToQueue(carsToSendStrings); //wyslij do kolejki Id nowych aut i ich strony
         }
         if(carToRun != -1)
@@ -71,7 +70,7 @@ public class CarFederate extends BaseFederate{
                 tmpCar.setSpeed(lastCarSpeed);
             }
 
-            sentIEnteredTheBrigde(); //wyslij komunikat do mostu ze wjechalem na moscik
+            sendIEnteredTheBridge(); //wyslij komunikat do mostu ze wjechalem na moscik
             startedCarsIds.add(tmpCar.getId());
             tmpCar.setStarted(true);
             tmpCar.setStartedTime(this.fedamb.getFederateTime());
@@ -88,15 +87,16 @@ public class CarFederate extends BaseFederate{
                 if(tmpCar.getCurrentState() > Constants.bridgeLenght)
                 {
                     logMe("AUTA: skonczylem auto nr: " + id);
-                    sentILeftTheBrigde(); //wyslij do mostu ze skonczylem
+                    sendILeftTheBridge(); //wyslij do mostu ze skonczylem
                     tmpCar.setFinished(true);
                     tmpCar.setFinishedTime(this.fedamb.getFederateTime());
                     startedCarsIds.remove(i);
                     i--;
                 }
             }
-            //TODO ZAKTUALIZUJ AKTUALNE POZYCJE AUT W GUI
+
         }
+        sendCarData(startedCarsIds.stream().map(String::valueOf).collect(Collectors.joining(",")));
     }
 
     @Override
@@ -104,6 +104,8 @@ public class CarFederate extends BaseFederate{
         addPublication("HLAinteractionRoot.CarCalls.WeWantToDriveThrough", "weWantToDriveThrough");
         addPublication("HLAinteractionRoot.CarCalls.IEnteredTheBridge", "iEnteredTheBridge");
         addPublication("HLAinteractionRoot.CarCalls.ILeftTheBridge", "iLeftTheBridge");
+
+        addPublication("HLAinteractionRoot.CarCalls.SendCarData", "sendCarData");
 
         addSubscription("HLAinteractionRoot.QueueCalls.YouCanDriveThrough","youCanDriveThrough");
         addSubscription("HLAinteractionRoot.QueueCalls.ResetLastSpeed","resetLastSpeed");
@@ -127,14 +129,21 @@ public class CarFederate extends BaseFederate{
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("weWantToDriveThrough").getInteraction(),parameters));
     }
 
-    private void sentIEnteredTheBrigde() throws  RTIexception {
+    private void sendIEnteredTheBridge() throws  RTIexception {
         ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(0);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("iEnteredTheBridge").getInteraction(),parameters));
     }
 
-    private void sentILeftTheBrigde() throws  RTIexception {
+    private void sendILeftTheBridge() throws  RTIexception {
         ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(0);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("iLeftTheBridge").getInteraction(),parameters));
+    }
+
+    private void sendCarData(String startedCars) throws RTIexception{
+        ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(1);
+        byte[] carsIdsBytes = encoderFactory.createHLAASCIIstring(startedCars).toByteArray();
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carIds"),carsIdsBytes);
+        interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("sendCarData").getInteraction(),parameters));
     }
 
     public ArrayList<String> makeStrings(ArrayList<CarViewModel> cars)
@@ -147,11 +156,8 @@ public class CarFederate extends BaseFederate{
             tmpIdsList.add(car.getId());
             tmpSidesList.add(car.getSide());
         }
-        String tmpIdsListString = tmpIdsList.toString();
-        String tmpSidesListString = tmpSidesList.toString();
-
-        carsToSend.add(tmpIdsListString.substring(1, tmpIdsListString.length() - 1));
-        carsToSend.add(tmpSidesListString.substring(1, tmpSidesListString.length() - 1));
+        carsToSend.add(tmpIdsList.stream().map(String::valueOf).collect(Collectors.joining(",")));
+        carsToSend.add(tmpSidesList.stream().map(String::valueOf).collect(Collectors.joining(",")));
         return carsToSend;
     }
 

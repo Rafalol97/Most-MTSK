@@ -44,22 +44,19 @@ public class BridgeFederate extends BaseFederate{
             logMe("MOST: resetuje zegar z: " + lightsTimer);
             while(lightsTimer <= 0)
             {
-                lightsTimer += Constants.LIGHT_INTERVAL;
+                lightsTimer += Constants.LIGHT_INTERVAL + 2;
                 currentLights ^= 1;
             }
         }
         lightsTimer--;
-
-        if(lightsTimer < 0)
-        {
-            //TODO wyslij do stats i zapisz z czasem operacji
-        }
+        sendData();
     }
 
     @Override
     protected void addPublicationsAndSubscriptions() throws RTIexception {
         addPublication("HLAinteractionRoot.BridgeCalls.BridgeIsFree", "bridgeIsFree");
         addPublication("HLAinteractionRoot.BridgeCalls.StopQueue", "stopQueue");
+        addPublication("HLAinteractionRoot.BridgeCalls.SendBridgeData", "sendBridgeData");
 
         addSubscription("HLAinteractionRoot.CarCalls.IEnteredTheBridge", "iEnteredTheBridge");
         addSubscription("HLAinteractionRoot.CarCalls.ILeftTheBridge", "iLeftTheBridge");
@@ -83,6 +80,15 @@ public class BridgeFederate extends BaseFederate{
     private void sendStopQueue() throws RTIexception{
         ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(1);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("stopQueue").getInteraction(),parameters));
+    }
+
+    private void sendData() throws RTIexception{
+        ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(2);
+        byte[] bridgeSideBytes = encoderFactory.createHLAASCIIstring(Integer.toString(currentLights)).toByteArray();
+        byte[] lightTimerBytes = encoderFactory.createHLAASCIIstring(Integer.toString(lightsTimer)).toByteArray();
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendBridgeData").getInteraction(),"BridgeSide"),bridgeSideBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendBridgeData").getInteraction(),"LightsTimer"),lightTimerBytes);
+        interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("sendBridgeData").getInteraction(),parameters));
     }
 
     @Override

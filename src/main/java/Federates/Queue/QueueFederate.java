@@ -5,7 +5,6 @@ import Federates.BaseFederateAmbassador;
 import Utils.InteractionToBeSend;
 import hla.rti1516e.ParameterHandleValueMap;
 import hla.rti1516e.exceptions.RTIexception;
-import models.Car;
 import models.CarViewModel;
 
 import java.util.ArrayList;
@@ -56,27 +55,31 @@ public class QueueFederate extends BaseFederate{
                 int carIdToStart = Queue1.get(0);
                 Queue1.remove(0);
                 logMe("KOLEJKA: Teraz samochod: " + carIdToStart);
-                sentCarIdThatCanStart(carIdToStart); //TODO wyślij id auta to wystartowania do carFederate
+                sendCarIdThatCanStart(carIdToStart); //TODO wyślij id auta to wystartowania do carFederate
             }
             else if(Queue2.size() != 0)
             {
                 int carIdToStart = Queue2.get(0);
                 Queue2.remove(0);
                 logMe("KOLEJKA: Teraz samochod: " + carIdToStart);
-                sentCarIdThatCanStart(carIdToStart); //TODO wyślij id auta to wystartowania do carFederate
+                sendCarIdThatCanStart(carIdToStart); //TODO wyślij id auta to wystartowania do carFederate
             }
         }
         else
         {
             logMe("KOLEJKA: wysyłam reset predkosci (czyli most zajety, zmiana stron!)");
-            sentResetLastSpeed(); //TODO wyslij do autFedereta reset lastCarSpeed
+            sendResetLastSpeed(); //TODO wyslij do autFedereta reset lastCarSpeed
         }
+
+        sendQueueData();
     }
 
     @Override
     protected void addPublicationsAndSubscriptions() throws RTIexception {
         addPublication("HLAinteractionRoot.QueueCalls.YouCanDriveThrough","youCanDriveThrough");
         addPublication("HLAinteractionRoot.QueueCalls.ResetLastSpeed","resetLastSpeed");
+
+        addPublication("HLAinteractionRoot.QueueCalls.SendQueueData","sendQueueData");
 
         addSubscription("HLAinteractionRoot.BridgeCalls.BridgeIsFree","bridgeIsFree");
         addSubscription("HLAinteractionRoot.BridgeCalls.StopQueue", "stopQueue");
@@ -93,32 +96,28 @@ public class QueueFederate extends BaseFederate{
     }
 
     public void receiveCars(HashMap<String, String> parameters) throws RTIexception {
-        recivedCars = makeCarsViewModel(parameters.get("carIds"), parameters.get("directionIds"));
+        recivedCars = CarViewModel.makeCarsViewModel(parameters.get("carIds"), parameters.get("directionIds"));
     }
 
-    public void sentCarIdThatCanStart(Integer carId) throws RTIexception {
+    public void sendCarIdThatCanStart(Integer carId) throws RTIexception {
         ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(1);
         byte[] carIdBytes = encoderFactory.createHLAASCIIstring(carId.toString()).toByteArray();
         parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("youCanDriveThrough").getInteraction(),"CarId"),carIdBytes);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("youCanDriveThrough").getInteraction(),parameters));
     }
 
-    public void sentResetLastSpeed() throws RTIexception {
+    public void sendResetLastSpeed() throws RTIexception {
         ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(0);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("resetLastSpeed").getInteraction(),parameters));
     }
 
-    public ArrayList<CarViewModel> makeCarsViewModel(String carIdsString, String directionIdsString)
-    {
-        ArrayList<CarViewModel> receivedCars = new ArrayList<>();
-
-        String[] carsIds = carIdsString.split(",");
-        String[] directionIds = directionIdsString.split(",");
-
-        for(int i = 0; i < carsIds.length; i++) {
-            receivedCars.add(new CarViewModel(Integer.parseInt(carsIds[i].trim()), Integer.parseInt(directionIds[i].trim())));
-        }
-        return receivedCars;
+    public void sendQueueData() throws RTIexception{
+        ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(2);
+        byte[] queue1Size = encoderFactory.createHLAASCIIstring(Integer.toString(Queue1.size())).toByteArray();
+        byte[] queue2Size = encoderFactory.createHLAASCIIstring(Integer.toString(Queue2.size())).toByteArray();
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendQueueData").getInteraction(),"Queue1Size"),queue1Size);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendQueueData").getInteraction(),"Queue2Size"),queue2Size);
+        interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("sendQueueData").getInteraction(),parameters));
     }
 
     @Override

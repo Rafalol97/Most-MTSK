@@ -1,9 +1,14 @@
 package Federates.GUI;
 
+import Federates.Statistics.ChartController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,10 +21,9 @@ public class BridgeGUI extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Pane root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml_test.fxml"));
-
-
-        primaryStage.setScene(new Scene(root,1000,800));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        primaryStage.setScene(new Scene(root, 1000, 800));
         primaryStage.show();
     }
 }

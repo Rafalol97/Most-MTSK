@@ -42,6 +42,19 @@
                     <order>TimeStamp</order>
                     <semantics>Car has ended </semantics>
                 </interactionClass>
+                <interactionClass>
+                    <name>SendCarData</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>Car has ended </semantics>
+                    <parameter>
+                        <name>carIds</name>
+                        <dataType>String</dataType>
+                        <semantics>Car's id number</semantics>
+                    </parameter>
+
+                </interactionClass>
                 <sharing></sharing>
             </interactionClass>
 
@@ -70,6 +83,23 @@
                     <order>TimeStamp</order>
                     <semantics>BridgeCallsToStopTheQueue</semantics>
                 </interactionClass>
+                <interactionClass>
+                    <name>SendBridgeData</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>BridgeSendStatisticsAndGUIData</semantics>
+                    <parameter>
+                        <name>BridgeSide</name>
+                        <dataType>Number</dataType>
+                        <semantics>IdOfTheBridgeSide</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>LightsTimer</name>
+                        <dataType>Number</dataType>
+                        <semantics>LightTimer</semantics>
+                    </parameter>
+                </interactionClass>
                 <sharing></sharing>
             </interactionClass>
 
@@ -97,6 +127,23 @@
                     <transportation>HLAreliable</transportation>
                     <order>TimeStamp</order>
                     <semantics>ChangeDirectionOnBridge</semantics>
+                </interactionClass>
+                <interactionClass>
+                    <name>SendQueueData</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>SendData</semantics>
+                    <parameter>
+                        <name>Queue1Size</name>
+                        <dataType>Number</dataType>
+                        <semantics>NumberOfCarsWaitingOnTheLeftSide</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>Queue2Size</name>
+                        <dataType>Number</dataType>
+                        <semantics>NumberOfCarsWaitingOnTheRightSide</semantics>
+                    </parameter>
                 </interactionClass>
                 <sharing></sharing>
             </interactionClass>

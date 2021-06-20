@@ -1,7 +1,9 @@
 import Federates.Bridge.BridgeFederate;
 import Federates.Car.CarFederate;
 import Federates.GUI.BridgeGUI;
+import Federates.GUI.GUIFederate;
 import Federates.Queue.QueueFederate;
+import Federates.Statistics.StatisticsFederate;
 
 
 public class SimulationStarter {
@@ -16,7 +18,10 @@ public class SimulationStarter {
         initializer = new Thread(() -> CarFederate.main(new String[]{"CarFederator"}));
         initializer.start();
 
-        initializer = new Thread(() -> BridgeGUI.main(new String[]{"GUI"}));
+        initializer = new Thread(() -> StatisticsFederate.main(new String[]{"StatisticsFederate"}));
+        initializer.start();
+
+        initializer = new Thread(() -> GUIFederate.main(new String[]{"GUIFederate"}));
         initializer.start();
     }
 }

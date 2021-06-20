@@ -2,21 +2,19 @@ package Federates.GUI;
 
 import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
-import Utils.InteractionToBeSend;
-import hla.rti1516e.ParameterHandleValueMap;
 import hla.rti1516e.exceptions.RTIexception;
-import models.Car;
-import models.CarViewModel;
-
-import java.util.ArrayList;
-import java.util.HashMap;
+import javafx.application.Platform;
 
 
 public class GUIFederate extends BaseFederate{
 
+    public BridgeGUI bridgeGUI;
 
     public void initializeFederate(){
-        this.federateType = "QueueFederateType";
+        this.federateType = "GUIFederateType";
+        bridgeGUI = new BridgeGUI();
+        BridgeGUI.main(new String[]{""});
+
     }
 
     public GUIFederate() throws RTIexception {

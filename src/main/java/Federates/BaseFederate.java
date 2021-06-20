@@ -159,6 +159,8 @@ public abstract class BaseFederate
         // cache the time factory for easy access
         this.timeFactory = (HLAfloat64TimeFactory) rtiamb.getTimeFactory();
 
+        waitForUser();
+
         ////////////////////////////////
         // 5. announce the sync point //
         ////////////////////////////////
@@ -196,6 +198,7 @@ public abstract class BaseFederate
 
             advanceTime(1.0);
         }
+        lastTaskBeforeDestroy();
 
         rtiamb.resignFederationExecution(ResignAction.DELETE_OBJECTS);
         log("Resigned from Federation");
@@ -385,4 +388,7 @@ public abstract class BaseFederate
     protected abstract BaseFederateAmbassador newFedAmb();
     protected abstract void initializeFederate();
     protected abstract void toDoInEachIteration() throws RTIexception;
+    protected void lastTaskBeforeDestroy(){
+
+    }
 }
