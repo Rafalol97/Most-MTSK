@@ -149,6 +149,62 @@
             </interactionClass>
 
 
+            <interactionClass>
+                <name>StatisticsCalls</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>TimeStamp</order>
+                <semantics>Base class for Stats calls</semantics>
+                <interactionClass>
+                    <name>SendStats</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <transportation>HLAreliable</transportation>
+                    <order>TimeStamp</order>
+                    <semantics>sendStats</semantics>
+                    <parameter>
+                        <name>StartedCarsSize</name>
+                        <dataType>String</dataType>
+                        <semantics>StartedCarsSize</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>OverallQueue1Size</name>
+                        <dataType>Number</dataType>
+                        <semantics>OverallQueue1Size</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>OverallQueue2Size</name>
+                        <dataType>Number</dataType>
+                        <semantics>OverallQueue2Size</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>Queue1Size</name>
+                        <dataType>String</dataType>
+                        <semantics>Queue1Size</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>Queue2Size</name>
+                        <dataType>String</dataType>
+                        <semantics>Queue2Size</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>LightsTimer</name>
+                        <dataType>String</dataType>
+                        <semantics>LightsTimer</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>BridgeSide</name>
+                        <dataType>String</dataType>
+                        <semantics>BridgeSide</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>GeneratedCars</name>
+                        <dataType>String</dataType>
+                        <semantics>GeneratedCars</semantics>
+                    </parameter>
+                </interactionClass>
+                <sharing></sharing>
+            </interactionClass>
+
         </interactionClass>
     </interactions>
 </objectModel>

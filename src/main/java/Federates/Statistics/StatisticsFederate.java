@@ -2,6 +2,8 @@ package Federates.Statistics;
 
 import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
+import Utils.InteractionToBeSend;
+import hla.rti1516e.ParameterHandleValueMap;
 import hla.rti1516e.exceptions.RTIexception;
 import models.CarViewModel;
 
@@ -43,6 +45,29 @@ public class StatisticsFederate extends BaseFederate {
         addSubscription("HLAinteractionRoot.QueueCalls.SendQueueData", "sendQueueData");
         addSubscription("HLAinteractionRoot.BridgeCalls.SendBridgeData", "sendBridgeData");
         addSubscription("HLAinteractionRoot.CarCalls.WeWantToDriveThrough", "weWantToDriveThrough");
+
+        addPublication("HLAinteractionRoot.StatisticsCalls.SendStats", "sendStats");
+    }
+
+    private void SendStats(String StartedCarsSize, String OverallQueue1Size, String OverallQueue2Size, String Queue1Size, String Queue2Size, String LightsTimer, String BridgeSide, String GeneratedCars) throws RTIexception{
+        ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(8);
+        byte[] startedCarsSizeBytes = encoderFactory.createHLAASCIIstring(StartedCarsSize).toByteArray();
+        byte[] overallQueue1SizeBytes = encoderFactory.createHLAASCIIstring(OverallQueue1Size).toByteArray();
+        byte[] overallQueue2SizeBytes = encoderFactory.createHLAASCIIstring(OverallQueue2Size).toByteArray();
+        byte[] queue1SizeBytes = encoderFactory.createHLAASCIIstring(Queue1Size).toByteArray();
+        byte[] queue2SizeBytes = encoderFactory.createHLAASCIIstring(Queue2Size).toByteArray();
+        byte[] lightsTimerBytes = encoderFactory.createHLAASCIIstring(LightsTimer).toByteArray();
+        byte[] bridgeSideBytes = encoderFactory.createHLAASCIIstring(BridgeSide).toByteArray();
+        byte[] generatedCarsBytes = encoderFactory.createHLAASCIIstring(GeneratedCars).toByteArray();
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStartedCarsSize").getInteraction(),"StartedCarsSize"),startedCarsSizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendOverallQueue1Size").getInteraction(),"OverallQueue1Size"),overallQueue1SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendOverallQueue2Size").getInteraction(),"OverallQueue2Size"),overallQueue2SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendQueue1Size").getInteraction(),"Queue1Size"),queue1SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendQueue2Size").getInteraction(),"Queue2Size"),queue2SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendLightsTimer").getInteraction(),"LightsTimer"),lightsTimerBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendBridgeSide").getInteraction(),"BridgeSide"),bridgeSideBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendGeneratedCars").getInteraction(),"GeneratedCars"),generatedCarsBytes);
+        interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("sendStats").getInteraction(),parameters));
     }
 
     public void receiveCarData(HashMap<String, String> parameters) throws RTIexception {
@@ -101,6 +126,4 @@ public class StatisticsFederate extends BaseFederate {
             rtie.printStackTrace();
         }
     }
-
-
 }
