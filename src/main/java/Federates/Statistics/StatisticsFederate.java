@@ -9,6 +9,7 @@ import models.CarViewModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 
 public class StatisticsFederate extends BaseFederate {
@@ -37,6 +38,16 @@ public class StatisticsFederate extends BaseFederate {
     @Override
     protected void toDoInEachIteration() throws RTIexception {
         GeneratedCars.add(currentGeneratedNumberOfCars);
+        SendStats(
+                makeString(StartedCarsSize),
+                OverallQueue1Size.toString(),
+                OverallQueue2Size.toString(),
+                makeString(Queue1Size),
+                makeString(Queue2Size),
+                makeString(LightsTimer),
+                makeString(BridgeSide),
+                makeString(GeneratedCars)
+        );
     }
 
     @Override
@@ -125,5 +136,9 @@ public class StatisticsFederate extends BaseFederate {
         {
             rtie.printStackTrace();
         }
+    }
+
+    public String makeString(ArrayList<Integer> tmpArray) {
+        return tmpArray.stream().map(String::valueOf).collect(Collectors.joining(","));
     }
 }
