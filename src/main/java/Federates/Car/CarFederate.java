@@ -112,8 +112,8 @@ public class CarFederate extends BaseFederate{
     }
 
     public void carWithIdCanGo(HashMap<String, String> parameters) throws RTIexception {
-        logMe("ODBIERAM SAMOCHOD "+Integer.parseInt(parameters.get("CarId")));
         carToRun = Integer.parseInt(parameters.get("CarId"));
+        logMe("ODBIERAM SAMOCHOD "+carToRun);
     }
 
     public void resetDirection(HashMap<String, String> parameters) throws RTIexception {

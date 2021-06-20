@@ -4587,3 +4587,1332 @@ ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlready
 ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
 ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
 ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [BridgeFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [BridgeFederator]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25681] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-62657] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62123] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25681] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50010] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25681] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62657] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50010] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25681] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50010] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62657] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25681] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62123] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50010] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50010] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50010] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [CarFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [CarFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [CarFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-11] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1445)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1469)
+	at org.portico.lrc.services.time.handlers.incoming.TimeAdvanceRequestIncomingHandler.issueAllPossibleAdvances(TimeAdvanceRequestIncomingHandler.java:152)
+	at org.portico.lrc.services.time.handlers.incoming.TimeAdvanceRequestIncomingHandler.process(TimeAdvanceRequestIncomingHandler.java:64)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [CarFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [CarFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [CarFederator]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37833] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37833] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51872] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-4357] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37833] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-4357] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37833] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41281] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-4357] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41281] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41281] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-4357] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51872] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41281] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-4357] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51872] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41281] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51872] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41281] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37833] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-4357] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37833] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51872] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37833] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [CarFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [CarFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [CarFederator]
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-44049] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2676] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2676] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42274] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-24725] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42274] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2676] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-44049] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-44049] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42274] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42274] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2676] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42274] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-44049] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-24725] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-44049] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12236] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-8537] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51437] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12236] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12236] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51437] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12236] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-15304] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8537] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-15304] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8537] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12236] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-15304] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12236] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51437] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-8537] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-15304] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-8537] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-8537] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51437] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51437] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-15304] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-15304] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51437] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-6781] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2280] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12188] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2280] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2280] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6781] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12188] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2043] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2043] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6781] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2280] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12188] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2280] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2043] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-6781] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2043] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2043] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2280] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2043] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12188] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12188] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6781] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-6781] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12188] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+ERROR [Thread-0] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [BridgeFederator]: already registered
+ERROR [Thread-3] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [StatisticsFederate]: already registered
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: label already registered
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: label already registered
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [CarFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [CarFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [CarFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-57971] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52239] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52239] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-57971] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28627] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-57971] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-57971] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52681] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-57971] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28627] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52239] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28627] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52681] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52239] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52681] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28627] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28627] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52239] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52681] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-57971] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28627] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52681] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52239] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52681] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-20603] portico.lrc.jgroups: Error processing received message: null
+java.lang.NullPointerException
+	at org.portico.bindings.jgroups.MessageReceiver.receiveAsynchronous(MessageReceiver.java:81)
+	at org.portico.bindings.jgroups.channel.FederationListener.incomingResignFederation(FederationListener.java:350)
+	at org.portico.bindings.jgroups.channel.FederationListener.receive(FederationListener.java:260)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.handleUpEvent(MessageDispatcher.java:528)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.up(MessageDispatcher.java:606)
+	at org.jgroups.JChannel.up(JChannel.java:715)
+	at org.jgroups.stack.ProtocolStack.up(ProtocolStack.java:1020)
+	at org.jgroups.protocols.pbcast.FLUSH.up(FLUSH.java:504)
+	at org.jgroups.protocols.pbcast.STATE_TRANSFER.up(STATE_TRANSFER.java:178)
+	at org.jgroups.protocols.FRAG2.up(FRAG2.java:181)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:418)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:418)
+	at org.jgroups.protocols.pbcast.GMS.up(GMS.java:896)
+	at org.jgroups.protocols.pbcast.STABLE.up(STABLE.java:244)
+	at org.jgroups.protocols.RSVP.up(RSVP.java:164)
+	at org.jgroups.protocols.UNICAST2.up(UNICAST2.java:432)
+	at org.jgroups.protocols.pbcast.NAKACK2.handleMessage(NAKACK2.java:716)
+	at org.jgroups.protocols.pbcast.NAKACK2.up(NAKACK2.java:570)
+	at org.jgroups.protocols.BARRIER.up(BARRIER.java:126)
+	at org.jgroups.protocols.VERIFY_SUSPECT.up(VERIFY_SUSPECT.java:143)
+	at org.jgroups.protocols.FD_ALL.up(FD_ALL.java:177)
+	at org.jgroups.protocols.MERGE3.up(MERGE3.java:290)
+	at org.jgroups.protocols.Discovery.up(Discovery.java:359)
+	at org.jgroups.protocols.TP.passMessageUp(TP.java:1293)
+	at org.jgroups.protocols.TP$IncomingPacket.handleMyMessage(TP.java:1856)
+	at org.jgroups.protocols.TP$IncomingPacket.run(TP.java:1829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-24797] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7788] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-20603] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7788] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-20603] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-24797] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33878] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-24797] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7788] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-24797] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-24797] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20603] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33878] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7788] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7788] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20603] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-26727] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50996] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50996] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-26727] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50996] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28192] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28192] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-26727] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50996] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25004] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28192] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28192] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-26727] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28192] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28192] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25004] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-26727] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25004] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25004] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-50996] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25004] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28192] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25004] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-26727] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [BridgeFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [BridgeFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40913] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40913] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40913] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40393] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-21681] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40393] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-34816] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40393] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-21681] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40913] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40393] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40913] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-34816] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40913] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40393] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40393] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51423] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51423] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-15537] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51423] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51423] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31361] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1699] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51423] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-15537] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31361] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-1699] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31361] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-31361] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51423] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-31361] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31361] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [QueueFederator]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [CarFederator]: already registered
+ERROR [Thread-3] portico.lrc: FAILURE Regiser sync point [ReadyToRun] by [StatisticsFederate]: already registered
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: label already registered
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: label already registered
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: label already registered
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64297] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35630] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64297] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64297] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10378] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35630] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35630] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10378] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27974] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10378] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10378] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64297] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10378] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-27974] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27974] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64297] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35630] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-27974] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27974] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35630] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35630] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64297] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64297] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10378] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-53603] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-4517] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-24125] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-53603] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-53603] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-24125] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-4517] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-53603] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-4517] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-24125] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-24125] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-4517] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50072] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-53603] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-50072] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-24125] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2406] portico.lrc.jgroups: Error processing received message: null
+java.lang.NullPointerException
+	at org.portico.bindings.jgroups.MessageReceiver.receiveAsynchronous(MessageReceiver.java:81)
+	at org.portico.bindings.jgroups.channel.FederationListener.incomingResignFederation(FederationListener.java:350)
+	at org.portico.bindings.jgroups.channel.FederationListener.receive(FederationListener.java:260)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.handleUpEvent(MessageDispatcher.java:528)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.up(MessageDispatcher.java:606)
+	at org.jgroups.JChannel.up(JChannel.java:715)
+	at org.jgroups.stack.ProtocolStack.up(ProtocolStack.java:1020)
+	at org.jgroups.protocols.pbcast.FLUSH.up(FLUSH.java:504)
+	at org.jgroups.protocols.pbcast.STATE_TRANSFER.up(STATE_TRANSFER.java:178)
+	at org.jgroups.protocols.FRAG2.up(FRAG2.java:181)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:418)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:418)
+	at org.jgroups.protocols.pbcast.GMS.up(GMS.java:896)
+	at org.jgroups.protocols.pbcast.STABLE.up(STABLE.java:244)
+	at org.jgroups.protocols.RSVP.up(RSVP.java:164)
+	at org.jgroups.protocols.UNICAST2.up(UNICAST2.java:432)
+	at org.jgroups.protocols.pbcast.NAKACK2.handleMessage(NAKACK2.java:716)
+	at org.jgroups.protocols.pbcast.NAKACK2.up(NAKACK2.java:570)
+	at org.jgroups.protocols.BARRIER.up(BARRIER.java:126)
+	at org.jgroups.protocols.VERIFY_SUSPECT.up(VERIFY_SUSPECT.java:143)
+	at org.jgroups.protocols.FD_ALL.up(FD_ALL.java:177)
+	at org.jgroups.protocols.MERGE3.up(MERGE3.java:290)
+	at org.jgroups.protocols.Discovery.up(Discovery.java:359)
+	at org.jgroups.protocols.TP.passMessageUp(TP.java:1293)
+	at org.jgroups.protocols.TP$IncomingPacket.handleMyMessage(TP.java:1856)
+	at org.jgroups.protocols.TP$IncomingPacket.run(TP.java:1829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2406] portico.lrc.jgroups: Error processing received message: null
+java.lang.NullPointerException
+	at org.portico.bindings.jgroups.MessageReceiver.receiveAsynchronous(MessageReceiver.java:81)
+	at org.portico.bindings.jgroups.channel.FederationListener.incomingResignFederation(FederationListener.java:350)
+	at org.portico.bindings.jgroups.channel.FederationListener.receive(FederationListener.java:260)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.handleUpEvent(MessageDispatcher.java:528)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.up(MessageDispatcher.java:606)
+	at org.jgroups.JChannel.up(JChannel.java:715)
+	at org.jgroups.stack.ProtocolStack.up(ProtocolStack.java:1020)
+	at org.jgroups.protocols.pbcast.FLUSH.up(FLUSH.java:504)
+	at org.jgroups.protocols.pbcast.STATE_TRANSFER.up(STATE_TRANSFER.java:178)
+	at org.jgroups.protocols.FRAG2.up(FRAG2.java:181)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:418)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:418)
+	at org.jgroups.protocols.pbcast.GMS.up(GMS.java:896)
+	at org.jgroups.protocols.pbcast.STABLE.up(STABLE.java:244)
+	at org.jgroups.protocols.RSVP.up(RSVP.java:164)
+	at org.jgroups.protocols.UNICAST2.up(UNICAST2.java:432)
+	at org.jgroups.protocols.pbcast.NAKACK2.handleMessage(NAKACK2.java:716)
+	at org.jgroups.protocols.pbcast.NAKACK2.up(NAKACK2.java:570)
+	at org.jgroups.protocols.BARRIER.up(BARRIER.java:126)
+	at org.jgroups.protocols.VERIFY_SUSPECT.up(VERIFY_SUSPECT.java:143)
+	at org.jgroups.protocols.FD_ALL.up(FD_ALL.java:177)
+	at org.jgroups.protocols.MERGE3.up(MERGE3.java:290)
+	at org.jgroups.protocols.Discovery.up(Discovery.java:359)
+	at org.jgroups.protocols.TP.passMessageUp(TP.java:1293)
+	at org.jgroups.protocols.TP$IncomingPacket.handleMyMessage(TP.java:1856)
+	at org.jgroups.protocols.TP$IncomingPacket.run(TP.java:1829)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [BridgeFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [BridgeFederator]
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-20333] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-26259] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41025] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20333] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-26259] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20333] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-47524] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20333] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [BridgeFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [BridgeFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41550] portico.lrc.jgroups: Error processing received message: null
+java.lang.NullPointerException
+	at org.portico.bindings.jgroups.MessageReceiver.receiveAsynchronous(MessageReceiver.java:81)
+	at org.portico.bindings.jgroups.channel.FederationListener.receive(FederationListener.java:246)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.handleUpEvent(MessageDispatcher.java:528)
+	at org.jgroups.blocks.MessageDispatcher$ProtocolAdapter.up(MessageDispatcher.java:606)
+	at org.jgroups.JChannel.up(JChannel.java:715)
+	at org.jgroups.stack.ProtocolStack.up(ProtocolStack.java:1020)
+	at org.jgroups.protocols.pbcast.FLUSH.up(FLUSH.java:504)
+	at org.jgroups.protocols.pbcast.STATE_TRANSFER.up(STATE_TRANSFER.java:178)
+	at org.jgroups.protocols.FRAG2.up(FRAG2.java:181)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:400)
+	at org.jgroups.protocols.FlowControl.up(FlowControl.java:418)
+	at org.jgroups.protocols.pbcast.GMS.up(GMS.java:896)
+	at org.jgroups.protocols.pbcast.STABLE.up(STABLE.java:244)
+	at org.jgroups.protocols.RSVP.up(RSVP.java:188)
+	at org.jgroups.protocols.UNICAST2.up(UNICAST2.java:432)
+	at org.jgroups.protocols.pbcast.NAKACK2.handleMessage(NAKACK2.java:754)
+	at org.jgroups.protocols.pbcast.NAKACK2.up(NAKACK2.java:570)
+	at org.jgroups.protocols.BARRIER.up(BARRIER.java:126)
+	at org.jgroups.protocols.VERIFY_SUSPECT.up(VERIFY_SUSPECT.java:143)
+	at org.jgroups.protocols.FD_ALL.up(FD_ALL.java:177)
+	at org.jgroups.protocols.MERGE3.up(MERGE3.java:290)
+	at org.jgroups.protocols.Discovery.up(Discovery.java:359)
+	at org.jgroups.protocols.TP.passMessageUp(TP.java:1293)
+	at org.jgroups.protocols.TP$IncomingPacket.handleMyMessage(TP.java:1856)
+	at org.jgroups.protocols.TP$IncomingPacket.run(TP.java:1824)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41554] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25827] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25827] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41554] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25827] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35585] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41554] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41550] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35585] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41554] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41550] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41554] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41554] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35585] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35585] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25827] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41550] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-25827] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-41550] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-35585] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-35585] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41550] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-25827] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-41550] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59608] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51715] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51715] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39654] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59608] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39654] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51715] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59608] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-44346] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59608] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-44346] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51715] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39654] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59608] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-44346] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39654] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39654] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-51715] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-51715] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-44346] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59608] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-44346] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39654] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-44346] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-6853] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6853] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-61513] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6853] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-332] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6853] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-58741] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-6853] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-9] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at org.portico.lrc.services.time.handlers.incoming.TimeAdvanceRequestIncomingHandler.issueAllPossibleAdvances(TimeAdvanceRequestIncomingHandler.java:155)
+	at org.portico.lrc.services.time.handlers.incoming.TimeAdvanceRequestIncomingHandler.process(TimeAdvanceRequestIncomingHandler.java:64)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-20415] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-55141] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-55141] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20415] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10890] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2659] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-20415] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2659] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-55141] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2659] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2659] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20415] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2659] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-55141] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10890] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-55141] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2659] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10890] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10890] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-20415] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-55141] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10890] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-20415] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10890] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [BridgeFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-31525] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-16738] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-31525] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-38302] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-38302] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31525] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-63406] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-38302] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-16738] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-38302] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-63406] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31525] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-38302] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-16738] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-16738] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-31525] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [CarFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [CarFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [CarFederator]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40843] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-22369] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-65094] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40843] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27840] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40843] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-22369] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-65094] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-22369] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40843] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40843] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-65094] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27840] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-22369] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-65094] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-22369] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-22369] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-27840] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27840] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-65094] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-65094] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-27840] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40843] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-27840] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [CarFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [CarFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [CarFederator]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-38249] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-55808] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62254] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-55808] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-13928] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-55808] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-38249] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-13928] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62254] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-38249] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-55808] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-38249] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-13928] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-38249] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-55808] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-13928] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-55808] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-62254] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-13928] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-62254] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-38249] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-62254] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62254] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-13928] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [BridgeFederator]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33924] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64858] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33924] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-45824] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64448] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64448] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64448] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33924] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-45824] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33924] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64858] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33924] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64858] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-45824] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-45824] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64858] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-64858] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64448] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-45824] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64448] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33924] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-64448] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-17551] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28610] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-44848] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-17551] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-44848] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14541] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-14541] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-17551] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28610] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14541] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-14541] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-28610] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-17551] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14541] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-28610] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-17551] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11420] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11868] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10192] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11420] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11868] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11420] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11868] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-16570] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-16570] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11420] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11420] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-16570] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-16570] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11868] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10192] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11868] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-16570] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10192] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11868] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10192] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10192] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-16570] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11420] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10192] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-47154] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11774] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11774] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-47154] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10495] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-47154] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11774] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10495] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7473] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-47154] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10495] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7473] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-47154] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10495] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10495] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11774] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7473] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-11774] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7473] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10495] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-11774] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7473] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-47154] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7473] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [CarFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [CarFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [CarFederator]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7198] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42265] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42265] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-56518] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7198] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-56518] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59015] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-56518] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59015] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42265] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42265] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59015] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-56518] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59015] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-56518] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-42265] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59015] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7198] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-42265] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7198] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-7198] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59015] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-56518] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-7198] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [StatisticsFederate]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [StatisticsFederate]
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40403] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-36931] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-36931] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14725] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33494] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40403] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40403] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14725] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-14725] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-36931] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33494] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-36931] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-36931] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40403] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-14725] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-40403] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-14725] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33494] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-33494] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-14725] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-40403] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33494] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-36931] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-33494] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-12] portico.lrc: FAILURE Exception encountered while processing incoming message: null
+java.lang.NullPointerException
+	at org.portico.lrc.services.time.data.TimeManager.recalculateLBTS(TimeManager.java:103)
+	at org.portico.lrc.services.time.handlers.incoming.TimeAdvanceRequestIncomingHandler.process(TimeAdvanceRequestIncomingHandler.java:63)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.lrc.LRC.tickProcess(LRC.java:688)
+	at org.portico.lrc.LRC.access$200(LRC.java:106)
+	at org.portico.lrc.LRC$ImmediateCallbackDispatcher.run(LRC.java:828)
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59170] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2082] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2082] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12521] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27770] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12521] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12521] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12521] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-59170] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12521] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12521] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59170] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-27770] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59170] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2082] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-59170] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2109] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-12259] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12259] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37314] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2109] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2109] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-2109] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37314] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37314] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2109] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12259] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-2109] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37314] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37314] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-37314] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-39823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-37314] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-12259] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-39823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-0] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-0] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-0] portico.lrc: FAILURE Register sync point [ReadyToRun] by [BridgeFederator]: point already registered by [QueueFederator]
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [QueueFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [QueueFederator]
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62658] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-62658] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10304] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10304] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-3878] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-62658] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-3878] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52823] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62658] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10304] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10304] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-62658] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-3878] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-10304] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-10304] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-3878] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52823] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-3878] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-62658] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-3878] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-3] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-2] portico.lrc.jgroups: FAILURE createFederation: already exists, name=BridgeFederation
+ERROR [Thread-2] portico.lrc: org.portico.lrc.compat.JFederationExecutionAlreadyExists: federation exists: BridgeFederation
+ERROR [Thread-3] portico.lrc: FAILURE Register sync point [ReadyToRun] by [StatisticsFederate]: point already registered by [BridgeFederator]
+ERROR [Thread-2] portico.lrc: FAILURE Register sync point [ReadyToRun] by [CarFederator]: point already registered by [BridgeFederator]
+ERROR [Thread-1] portico.lrc: FAILURE Register sync point [ReadyToRun] by [QueueFederator]: point already registered by [BridgeFederator]
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-2] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-0] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-3] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+WARN  [Thread-1] portico.lrc: MOM support is currently unsupported in IEEE-1516e federations.
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-60580] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52317] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52317] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-34979] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-53561] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-34979] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-52317] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-53561] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-60580] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-53561] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-53561] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52317] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-34979] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-53561] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Incoming,BridgeFederation,DESKTOP-MOKIJ40-34979] portico.lrc.jgroups: Connection [DESKTOP-MOKIJ40-52317] apparently destroyed federation [BridgeFederation], but we didn't know it existed, ignoring...
+ERROR [Thread-1] portico.lrc.jgroups: FAILURE destoryFederation [BridgeFederation]: doesn't exist
+ERROR [Thread-1] portico.lrc: org.portico.lrc.compat.JFederationExecutionDoesNotExist: doesn't exist: BridgeFederation

@@ -51,8 +51,8 @@ public class ChartController implements Initializable {
     }
 
     public void QueueSizeBarChart(){
-        ArrayList<Integer> queue1Size =  StatisticsFederate.Queue1Size;
-        ArrayList<Integer> queue2Size =  StatisticsFederate.Queue2Size;
+        ArrayList<Integer> queue1Size = new ArrayList<>();  //StatisticsFederate.Queue1Size;
+        ArrayList<Integer> queue2Size = new ArrayList<>();  //StatisticsFederate.Queue2Size;
         XYChart.Series set1 = new XYChart.Series<>();
         XYChart.Series set2 = new XYChart.Series<>();
         ArrayList<Object> data1 = new ArrayList<>();
@@ -71,8 +71,8 @@ public class ChartController implements Initializable {
 
     public void OverallQueueSizePieChart(){
         ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
-                new PieChart.Data("Queue 1", StatisticsFederate.OverallQueue1Size),
-                new PieChart.Data("Queue 2", StatisticsFederate.OverallQueue2Size)
+                new PieChart.Data("Queue 1", 1),//StatisticsFederate.OverallQueue1Size),
+                new PieChart.Data("Queue 2", 1)//StatisticsFederate.OverallQueue2Size)
         );
         pc.setData(pieChartData);
         pc.setStartAngle(180);
@@ -80,7 +80,7 @@ public class ChartController implements Initializable {
     }
 
     public void GeneratedCarsLineChart(){
-        ArrayList<Integer> queue1Size =  StatisticsFederate.GeneratedCars;
+        ArrayList<Integer> queue1Size =  new ArrayList<>();  //StatisticsFederate.GeneratedCars;
         XYChart.Series set1 = new XYChart.Series<>();
         ArrayList<Object> data1 = new ArrayList<>();
         for(int i = 0;i<queue1Size.size();i++) {
@@ -92,8 +92,8 @@ public class ChartController implements Initializable {
     }
 
     public void StartedCarsBarChart(){
-        ArrayList<Integer> lightsTimer =  StatisticsFederate.LightsTimer;
-        ArrayList<Integer> startedCarsSize =  StatisticsFederate.StartedCarsSize;
+        ArrayList<Integer> lightsTimer =  new ArrayList<>();  //StatisticsFederate.LightsTimer;
+        ArrayList<Integer> startedCarsSize =  new ArrayList<>();  //StatisticsFederate.StartedCarsSize;
         XYChart.Series set1 = new XYChart.Series<>();
         XYChart.Series set2 = new XYChart.Series<>();
         ArrayList<Object> data1 = new ArrayList<>();

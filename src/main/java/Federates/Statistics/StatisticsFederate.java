@@ -20,16 +20,22 @@ public class StatisticsFederate extends BaseFederate {
     }
 
 
-    public static ArrayList<Integer> StartedCarsSize = new ArrayList<>();
-    public static Integer OverallQueue1Size = 0;
-    public static Integer OverallQueue2Size = 0;
-    public static ArrayList<Integer> Queue1Size = new ArrayList<>();
-    public static ArrayList<Integer> Queue2Size = new ArrayList<>();
-    public static ArrayList<Integer> LightsTimer = new ArrayList<>();
-    public static ArrayList<Integer> BridgeSide = new ArrayList<>();
-    public static ArrayList<Integer> GeneratedCars = new ArrayList<>();
+    public ArrayList<Integer> StartedCarsSize = new ArrayList<>();
+    public Integer OverallQueue1Size = 0;
+    public Integer OverallQueue2Size = 0;
+    public ArrayList<Integer> Queue1Size = new ArrayList<>();
+    public ArrayList<Integer> Queue2Size = new ArrayList<>();
+    public ArrayList<Integer> LightsTimer = new ArrayList<>();
+    public ArrayList<Integer> BridgeSide = new ArrayList<>();
+    public ArrayList<Integer> GeneratedCars = new ArrayList<>();
 
     private Integer currentGeneratedNumberOfCars = 0;
+
+    public Integer tmpStartedCarSize;
+    public Integer tmpQueue1Size;
+    public Integer tmpQueue2Size;
+    public Integer tmpLightsTimer;
+    public Integer tmpBridgeSide;
 
     public StatisticsFederate() throws RTIexception {
         super();
@@ -37,16 +43,21 @@ public class StatisticsFederate extends BaseFederate {
 
     @Override
     protected void toDoInEachIteration() throws RTIexception {
+        StartedCarsSize.add(tmpStartedCarSize);
+        Queue1Size.add(tmpQueue1Size);
+        Queue2Size.add(tmpQueue2Size);
+        LightsTimer.add(tmpLightsTimer);
+        BridgeSide.add(tmpBridgeSide);
         GeneratedCars.add(currentGeneratedNumberOfCars);
         SendStats(
-                StartedCarsSize.stream().map(String::valueOf).collect(Collectors.joining(",")),
+                makeString(StartedCarsSize),
                 OverallQueue1Size.toString(),
                 OverallQueue2Size.toString(),
-                Queue1Size.stream().map(String::valueOf).collect(Collectors.joining(",")),
-                Queue2Size.stream().map(String::valueOf).collect(Collectors.joining(",")),
-                LightsTimer.stream().map(String::valueOf).collect(Collectors.joining(",")),
-                BridgeSide.stream().map(String::valueOf).collect(Collectors.joining(",")),
-                GeneratedCars.stream().map(String::valueOf).collect(Collectors.joining(","))
+                makeString(Queue1Size),
+                makeString(Queue2Size),
+                makeString(LightsTimer),
+                makeString(BridgeSide),
+                makeString(GeneratedCars)
         );
     }
 
@@ -83,21 +94,21 @@ public class StatisticsFederate extends BaseFederate {
 
     public void receiveCarData(HashMap<String, String> parameters) throws RTIexception {
         String startedCarIds = parameters.get("carIds");
-        StartedCarsSize.add(startedCarIds.split(",").length);
+        tmpStartedCarSize = startedCarIds.split(",").length;
     }
 
     public void receiveQueueData(HashMap<String, String> parameters) throws RTIexception {
-        Queue1Size.add(Integer.parseInt(parameters.get("Queue1Size")));
-        Queue2Size.add(Integer.parseInt(parameters.get("Queue2Size")));
+        tmpQueue1Size=Integer.parseInt(parameters.get("Queue1Size"));
+        tmpQueue2Size=Integer.parseInt(parameters.get("Queue2Size"));
     }
 
     public void receiveBridgeData(HashMap<String, String> parameters) throws RTIexception {
-        BridgeSide.add(Integer.parseInt(parameters.get("BridgeSide")));
+        tmpBridgeSide = Integer.parseInt(parameters.get("BridgeSide"));
         int lightsValue = Integer.parseInt(parameters.get("LightsTimer"));
         if(lightsValue<0)
-            LightsTimer.add(-1);
+            tmpLightsTimer = -1;
         else
-            LightsTimer.add(0);
+            tmpLightsTimer = 0;
     }
 
     public void receiveWeWantToDriveThrough(HashMap<String, String> parameters) {
@@ -136,5 +147,11 @@ public class StatisticsFederate extends BaseFederate {
         {
             rtie.printStackTrace();
         }
+    }
+
+    public String makeString(ArrayList<Integer> tmpArray)
+    {
+        ArrayList<Integer> arrayList = tmpArray;
+        return arrayList.stream().map(String::valueOf).collect(Collectors.joining(","));
     }
 }
