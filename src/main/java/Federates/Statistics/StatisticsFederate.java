@@ -39,14 +39,14 @@ public class StatisticsFederate extends BaseFederate {
     protected void toDoInEachIteration() throws RTIexception {
         GeneratedCars.add(currentGeneratedNumberOfCars);
         SendStats(
-                makeString(StartedCarsSize),
+                StartedCarsSize.stream().map(String::valueOf).collect(Collectors.joining(",")),
                 OverallQueue1Size.toString(),
                 OverallQueue2Size.toString(),
-                makeString(Queue1Size),
-                makeString(Queue2Size),
-                makeString(LightsTimer),
-                makeString(BridgeSide),
-                makeString(GeneratedCars)
+                Queue1Size.stream().map(String::valueOf).collect(Collectors.joining(",")),
+                Queue2Size.stream().map(String::valueOf).collect(Collectors.joining(",")),
+                LightsTimer.stream().map(String::valueOf).collect(Collectors.joining(",")),
+                BridgeSide.stream().map(String::valueOf).collect(Collectors.joining(",")),
+                GeneratedCars.stream().map(String::valueOf).collect(Collectors.joining(","))
         );
     }
 
@@ -70,14 +70,14 @@ public class StatisticsFederate extends BaseFederate {
         byte[] lightsTimerBytes = encoderFactory.createHLAASCIIstring(LightsTimer).toByteArray();
         byte[] bridgeSideBytes = encoderFactory.createHLAASCIIstring(BridgeSide).toByteArray();
         byte[] generatedCarsBytes = encoderFactory.createHLAASCIIstring(GeneratedCars).toByteArray();
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStartedCarsSize").getInteraction(),"StartedCarsSize"),startedCarsSizeBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendOverallQueue1Size").getInteraction(),"OverallQueue1Size"),overallQueue1SizeBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendOverallQueue2Size").getInteraction(),"OverallQueue2Size"),overallQueue2SizeBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendQueue1Size").getInteraction(),"Queue1Size"),queue1SizeBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendQueue2Size").getInteraction(),"Queue2Size"),queue2SizeBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendLightsTimer").getInteraction(),"LightsTimer"),lightsTimerBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendBridgeSide").getInteraction(),"BridgeSide"),bridgeSideBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendGeneratedCars").getInteraction(),"GeneratedCars"),generatedCarsBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"StartedCarsSize"),startedCarsSizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"OverallQueue1Size"),overallQueue1SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"OverallQueue2Size"),overallQueue2SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"Queue1Size"),queue1SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"Queue2Size"),queue2SizeBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"LightsTimer"),lightsTimerBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"BridgeSide"),bridgeSideBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendStats").getInteraction(),"GeneratedCars"),generatedCarsBytes);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("sendStats").getInteraction(),parameters));
     }
 
@@ -136,9 +136,5 @@ public class StatisticsFederate extends BaseFederate {
         {
             rtie.printStackTrace();
         }
-    }
-
-    public String makeString(ArrayList<Integer> tmpArray) {
-        return tmpArray.stream().map(String::valueOf).collect(Collectors.joining(","));
     }
 }

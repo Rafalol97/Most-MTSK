@@ -6,12 +6,14 @@ import hla.rti1516e.exceptions.RTIexception;
 import javafx.application.Platform;
 import models.Car;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 
 public class GUIFederate extends BaseFederate{
 
     public BridgeGUI bridgeGUI;
+    public ArrayList<Car> cars;
 
     public void initializeFederate(){
         this.federateType = "GUIFederateType";
@@ -41,6 +43,7 @@ public class GUIFederate extends BaseFederate{
     }
 
     public void receiveStartedcars(HashMap<String, String> sendCarData) {
+        cars = Car.makeCarModel(sendCarData.get("carIds"),sendCarData.get("carSpeeds"),sendCarData.get("carCurrentStates"),sendCarData.get("carSides"));
     }
 
     public void receiveStats(HashMap<String, String> sendStats) {
