@@ -96,7 +96,7 @@ public class CarFederate extends BaseFederate{
             }
 
         }
-        sendCarData(startedCarsIds.stream().map(String::valueOf).collect(Collectors.joining(",")));
+        sendCarData(Car.makeFullCarStrings(startedCarsIds,cars));
     }
 
     @Override
@@ -139,10 +139,16 @@ public class CarFederate extends BaseFederate{
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("iLeftTheBridge").getInteraction(),parameters));
     }
 
-    private void sendCarData(String startedCars) throws RTIexception{
-        ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(1);
-        byte[] carsIdsBytes = encoderFactory.createHLAASCIIstring(startedCars).toByteArray();
+    private void sendCarData(ArrayList<String> startedCars) throws RTIexception{
+        ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(4);
+        byte[] carsIdsBytes = encoderFactory.createHLAASCIIstring(startedCars.get(0)).toByteArray();
+        byte[] carSpeeds = encoderFactory.createHLAASCIIstring(startedCars.get(1)).toByteArray();
+        byte[] carCurrentStates = encoderFactory.createHLAASCIIstring(startedCars.get(2)).toByteArray();
+        byte[] carSides = encoderFactory.createHLAASCIIstring(startedCars.get(3)).toByteArray();
         parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carIds"),carsIdsBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carSpeeds"),carsIdsBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carCurrentStates"),carsIdsBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carSides"),carsIdsBytes);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("sendCarData").getInteraction(),parameters));
     }
 
@@ -160,6 +166,8 @@ public class CarFederate extends BaseFederate{
         carsToSend.add(tmpSidesList.stream().map(String::valueOf).collect(Collectors.joining(",")));
         return carsToSend;
     }
+
+
 
     @Override
     protected BaseFederateAmbassador newFedAmb(){
@@ -182,7 +190,4 @@ public class CarFederate extends BaseFederate{
             rtie.printStackTrace();
         }
     }
-
-
-
 }

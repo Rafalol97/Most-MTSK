@@ -4,6 +4,9 @@ import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
 import hla.rti1516e.exceptions.RTIexception;
 import javafx.application.Platform;
+import models.Car;
+
+import java.util.HashMap;
 
 
 public class GUIFederate extends BaseFederate{
@@ -28,12 +31,19 @@ public class GUIFederate extends BaseFederate{
 
     @Override
     protected void addPublicationsAndSubscriptions() throws RTIexception {
-
+        addSubscription("HLAinteractionRoot.CarCalls.SendCarData", "sendCarData");
+        addSubscription("HLAinteractionRoot.StatisticsCalls.SendStats", "sendStats");
     }
 
     @Override
     protected BaseFederateAmbassador newFedAmb(){
         return new GUIFederateAmbassador(this);
+    }
+
+    public void receiveStartedcars(HashMap<String, String> sendCarData) {
+    }
+
+    public void receiveStats(HashMap<String, String> sendStats) {
     }
 
     public static void main( String[] args )
@@ -52,4 +62,6 @@ public class GUIFederate extends BaseFederate{
             rtie.printStackTrace();
         }
     }
+
+
 }

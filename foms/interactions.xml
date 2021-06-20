@@ -53,6 +53,21 @@
                         <dataType>String</dataType>
                         <semantics>Car's id number</semantics>
                     </parameter>
+                    <parameter>
+                        <name>carSpeeds</name>
+                        <dataType>String</dataType>
+                        <semantics>Car's speeds</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>carCurrentStates</name>
+                        <dataType>String</dataType>
+                        <semantics>Car's state</semantics>
+                    </parameter>
+                    <parameter>
+                        <name>carSides</name>
+                        <dataType>String</dataType>
+                        <semantics>Car's side</semantics>
+                    </parameter>
 
                 </interactionClass>
                 <sharing></sharing>

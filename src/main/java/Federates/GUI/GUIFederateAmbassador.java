@@ -21,17 +21,15 @@ public class GUIFederateAmbassador extends BaseFederateAmbassador {
                                    OrderType receivedOrdering,
                                    SupplementalReceiveInfo receiveInfo)
             throws FederateInternalError {
-//
-//        try {
-//            if (interactionClass.equals(federate.getInteractionClassHandle("bridgeIsFree").getInteraction())) {
-//                ((QueueFederate) federate).receiveFreeState(castParametersToString(theParameters, "bridgeIsFree"));
-//            } else if (interactionClass.equals(federate.getInteractionClassHandle("stopQueue").getInteraction())) {
-//                ((QueueFederate) federate).receiveStopQueue(castParametersToString(theParameters, "stopQueue"));
-//            } else if (interactionClass.equals(federate.getInteractionClassHandle("weWantToDriveThrough").getInteraction())) {
-//                ((QueueFederate) federate).receiveCars(castParametersToString(theParameters, "weWantToDriveThrough"));
-//            }
-//        } catch (RTIexception rtIexception) {
-//            rtIexception.printStackTrace();
-//        }
+
+        try {
+            if (interactionClass.equals(federate.getInteractionClassHandle("sendCarData").getInteraction())) {
+                ((GUIFederate) federate).receiveStartedcars(castParametersToString(theParameters, "sendCarData"));
+            } else if (interactionClass.equals(federate.getInteractionClassHandle("sendStats").getInteraction())) {
+                ((GUIFederate) federate).receiveStats(castParametersToString(theParameters, "sendStats"));
+            }
+        } catch (RTIexception rtIexception) {
+            rtIexception.printStackTrace();
+        }
     }
 }
