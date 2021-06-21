@@ -40,6 +40,9 @@ public class GUIFederate extends BaseFederate {
         if(iteration % 5 ==0){
             BridgeGUI.updateStatistics(Queue1Size,Queue2Size,OverallQueue1Size,OverallQueue2Size,GeneratedCars,LightsTimer,StartedCarsSize);
         }
+        if(Queue1Size!=null && Queue2Size !=null && Queue1Size.size()>0 && Queue2Size.size()>0) {
+            BridgeGUI.UpdateQueueData(Queue1Size.get(Queue1Size.size() - 1), Queue2Size.get(Queue2Size.size() - 1));
+        }
 
     }
 

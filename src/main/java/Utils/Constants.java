@@ -4,7 +4,7 @@ public class Constants {
     //FOR ALL FEDERATES
     public static int MAX_ITERATIONS = 100;
     public static String FEDERATION_NAME = "BridgeFederation";
-    public static int ITERATION_DELAY = 300;
+    public static int ITERATION_DELAY = 700;
     public static boolean USE_DELAY = true;
 
     //BRIDGE

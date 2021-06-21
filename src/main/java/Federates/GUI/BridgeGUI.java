@@ -157,4 +157,11 @@ public class BridgeGUI extends Application {
         guiController.startedbc.getData().addAll(set1);
         guiController.startedbc.getData().addAll(set2);
     }
+
+    public static void UpdateQueueData(Integer Queue1Size, Integer Queue2Size){
+        Platform.runLater(()->{
+            guiController.CarsInQueue1.setText( Queue1Size.toString());
+            guiController.CarsInQueue2.setText( Queue2Size.toString());
+        });
+    }
 }
