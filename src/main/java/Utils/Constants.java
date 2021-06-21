@@ -13,9 +13,9 @@ public class Constants {
 
     //GENERATE CARS
     public static double minAddTime = 1.0;
-    public static double maxAddTime = 5.0;
-    public static int minCarsToGenerate = 3;
-    public static int maxCarsToGenerate = 5;
-    public static double minCarSpeed = 2.0;
-    public static double maxCarSpeed = 5.0;
+    public static double maxAddTime = 7.0;
+    public static int minCarsToGenerate = 2;
+    public static int maxCarsToGenerate = 4;
+    public static double minCarSpeed = 1.0;
+    public static double maxCarSpeed = 3.0;
 }

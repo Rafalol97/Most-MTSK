@@ -57,7 +57,7 @@ public class QueueFederate extends BaseFederate{
                 logMe("KOLEJKA: Teraz samochod: " + carIdToStart);
                 sendCarIdThatCanStart(carIdToStart); //TODO wyślij id auta to wystartowania do carFederate
             }
-            else if(Queue2.size() != 0)
+            else if(currentSide == 0 && Queue2.size() != 0)
             {
                 int carIdToStart = Queue2.get(0);
                 Queue2.remove(0);
