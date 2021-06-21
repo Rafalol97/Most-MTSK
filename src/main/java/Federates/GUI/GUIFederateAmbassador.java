@@ -27,6 +27,8 @@ public class GUIFederateAmbassador extends BaseFederateAmbassador {
                 ((GUIFederate) federate).receiveStartedcars(castParametersToString(theParameters, "sendCarData"));
             } else if (interactionClass.equals(federate.getInteractionClassHandle("sendStats").getInteraction())) {
                 ((GUIFederate) federate).receiveStats(castParametersToString(theParameters, "sendStats"));
+            } else if (interactionClass.equals(federate.getInteractionClassHandle("stopQueue").getInteraction())) {
+                ((GUIFederate) federate).receiveStop(castParametersToString(theParameters, "stopQueue"));
             }
         } catch (RTIexception rtIexception) {
             rtIexception.printStackTrace();

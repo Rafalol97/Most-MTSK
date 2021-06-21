@@ -43,6 +43,7 @@ public class GUIFederate extends BaseFederate {
         if(Queue1Size!=null && Queue2Size !=null && Queue1Size.size()>0 && Queue2Size.size()>0) {
             BridgeGUI.UpdateQueueData(Queue1Size.get(Queue1Size.size() - 1), Queue2Size.get(Queue2Size.size() - 1));
         }
+       BridgeGUI.UpdateLights();
 
     }
 
@@ -50,6 +51,7 @@ public class GUIFederate extends BaseFederate {
     protected void addPublicationsAndSubscriptions() throws RTIexception {
         addSubscription("HLAinteractionRoot.CarCalls.SendCarData", "sendCarData");
         addSubscription("HLAinteractionRoot.StatisticsCalls.SendStats", "sendStats");
+        addSubscription("HLAinteractionRoot.BridgeCalls.StopQueue", "stopQueue");
     }
 
     @Override
@@ -95,4 +97,8 @@ public class GUIFederate extends BaseFederate {
         return tmpArray;
     }
 
+    public void receiveStop(HashMap<String, String> stopQueue) {
+        BridgeGUI.Stop();
+
+    }
 }
