@@ -76,14 +76,14 @@ public class QueueFederate extends BaseFederate{
 
     @Override
     protected void addPublicationsAndSubscriptions() throws RTIexception {
-        addPublication("HLAinteractionRoot.QueueCalls.YouCanDriveThrough","youCanDriveThrough");
-        addPublication("HLAinteractionRoot.QueueCalls.ResetLastSpeed","resetLastSpeed");
+        addPublication("HLAinteractionRoot.Queue.YouCanDriveThrough","youCanDriveThrough");
+        addPublication("HLAinteractionRoot.Queue.ResetLastSpeed","resetLastSpeed");
 
-        addPublication("HLAinteractionRoot.QueueCalls.SendQueueData","sendQueueData");
+        addPublication("HLAinteractionRoot.Queue.SendQueueData","sendQueueData");
 
-        addSubscription("HLAinteractionRoot.BridgeCalls.BridgeIsFree","bridgeIsFree");
-        addSubscription("HLAinteractionRoot.BridgeCalls.StopQueue", "stopQueue");
-        addSubscription("HLAinteractionRoot.CarCalls.WeWantToDriveThrough", "weWantToDriveThrough");
+        addSubscription("HLAinteractionRoot.Bridge.BridgeIsFree","bridgeIsFree");
+        addSubscription("HLAinteractionRoot.Bridge.StopQueue", "stopQueue");
+        addSubscription("HLAinteractionRoot.Car.WeWantToDriveThrough", "weWantToDriveThrough");
     }
 
     public void receiveFreeState(HashMap<String, String> parameters) throws RTIexception {
@@ -121,7 +121,7 @@ public class QueueFederate extends BaseFederate{
     }
 
     @Override
-    protected BaseFederateAmbassador newFedAmb(){
+    protected BaseFederateAmbassador returnNewFederateAmbassador(){
         return new QueueFederateAmbassador(this);
     }
 

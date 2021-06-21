@@ -115,7 +115,7 @@ public abstract class BaseFederate
 
         // connect
         log("Connecting...");
-        fedamb = newFedAmb();
+        fedamb = returnNewFederateAmbassador();
         rtiamb.connect(fedamb, CallbackModel.HLA_IMMEDIATE);  // deliver callbacks as soon as they arrive
         //rtiamb.connect( fedamb, CallbackModel.HLA_EVOKED );   // deliver callbacks when we call evoke
 
@@ -201,6 +201,7 @@ public abstract class BaseFederate
                 Thread.sleep(ITERATION_DELAY);
             }
         }
+        lastActionBeforeDestroy();
 
         rtiamb.resignFederationExecution(ResignAction.DELETE_OBJECTS);
         log("Resigned from Federation");
@@ -387,7 +388,11 @@ public abstract class BaseFederate
     }
 
     protected abstract void addPublicationsAndSubscriptions() throws RTIexception;
-    protected abstract BaseFederateAmbassador newFedAmb();
+    protected abstract BaseFederateAmbassador returnNewFederateAmbassador();
     protected abstract void initializeFederate();
     protected abstract void iterationSequence() throws RTIexception;
+
+    protected void lastActionBeforeDestroy() throws RTIexception{
+
+    }
 }

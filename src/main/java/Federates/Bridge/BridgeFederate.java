@@ -18,10 +18,6 @@ public class BridgeFederate extends BaseFederate{
 
     int currentLights = 0;
 
-    public void initializeFederate(){
-        this.federateType = "BridgeFederateType";
-    }
-
     public BridgeFederate()
     {
         super();
@@ -54,12 +50,12 @@ public class BridgeFederate extends BaseFederate{
 
     @Override
     protected void addPublicationsAndSubscriptions() throws RTIexception {
-        addPublication("HLAinteractionRoot.BridgeCalls.BridgeIsFree", "bridgeIsFree");
-        addPublication("HLAinteractionRoot.BridgeCalls.StopQueue", "stopQueue");
-        addPublication("HLAinteractionRoot.BridgeCalls.SendBridgeData", "sendBridgeData");
+        addPublication("HLAinteractionRoot.Bridge.BridgeIsFree", "bridgeIsFree");
+        addPublication("HLAinteractionRoot.Bridge.StopQueue", "stopQueue");
+        addPublication("HLAinteractionRoot.Bridge.SendBridgeData", "sendBridgeData");
 
-        addSubscription("HLAinteractionRoot.CarCalls.IEnteredTheBridge", "iEnteredTheBridge");
-        addSubscription("HLAinteractionRoot.CarCalls.ILeftTheBridge", "iLeftTheBridge");
+        addSubscription("HLAinteractionRoot.Car.IEnteredTheBridge", "iEnteredTheBridge");
+        addSubscription("HLAinteractionRoot.Car.ILeftTheBridge", "iLeftTheBridge");
     }
 
     public void increaseCarsOnBridge(HashMap<String, String> parameters) throws RTIexception {
@@ -92,8 +88,12 @@ public class BridgeFederate extends BaseFederate{
     }
 
     @Override
-    protected BaseFederateAmbassador newFedAmb(){
+    protected BaseFederateAmbassador returnNewFederateAmbassador(){
         return new BridgeFederateAmbassador(this);
+    }
+
+    public void initializeFederate(){
+        this.federateType = "BridgeFederateType";
     }
 
     public static void main( String[] args )

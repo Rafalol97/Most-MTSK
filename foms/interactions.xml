@@ -6,7 +6,7 @@
         <interactionClass>
             <name>HLAinteractionRoot</name>
             <interactionClass>
-                <name>CarCalls</name>
+                <name>Car</name>
                 <sharing>PublishSubscribe</sharing>
                 <transportation>HLAreliable</transportation>
                 <order>TimeStamp</order>
@@ -74,7 +74,7 @@
             </interactionClass>
 
             <interactionClass>
-                <name>BridgeCalls</name>
+                <name>Bridge</name>
                 <sharing>PublishSubscribe</sharing>
                 <transportation>HLAreliable</transportation>
                 <order>TimeStamp</order>
@@ -119,7 +119,7 @@
             </interactionClass>
 
             <interactionClass>
-                <name>QueueCalls</name>
+                <name>Queue</name>
                 <sharing>PublishSubscribe</sharing>
                 <transportation>HLAreliable</transportation>
                 <order>TimeStamp</order>
@@ -165,7 +165,7 @@
 
 
             <interactionClass>
-                <name>StatisticsCalls</name>
+                <name>Statistics</name>
                 <sharing>PublishSubscribe</sharing>
                 <transportation>HLAreliable</transportation>
                 <order>TimeStamp</order>

@@ -63,16 +63,6 @@ public class StatisticsFederate extends BaseFederate {
         );
     }
 
-    @Override
-    protected void addPublicationsAndSubscriptions() throws RTIexception {
-        addSubscription("HLAinteractionRoot.CarCalls.SendCarData", "sendCarData");
-        addSubscription("HLAinteractionRoot.QueueCalls.SendQueueData", "sendQueueData");
-        addSubscription("HLAinteractionRoot.BridgeCalls.SendBridgeData", "sendBridgeData");
-        addSubscription("HLAinteractionRoot.CarCalls.WeWantToDriveThrough", "weWantToDriveThrough");
-
-        addPublication("HLAinteractionRoot.StatisticsCalls.SendStats", "sendStats");
-    }
-
     private void SendStats(String StartedCarsSize, String OverallQueue1Size, String OverallQueue2Size, String Queue1Size, String Queue2Size, String LightsTimer, String BridgeSide, String GeneratedCars) throws RTIexception{
         ParameterHandleValueMap parameters = rtiamb.getParameterHandleValueMapFactory().create(8);
         byte[] startedCarsSizeBytes = encoderFactory.createHLAASCIIstring(StartedCarsSize).toByteArray();
@@ -124,7 +114,7 @@ public class StatisticsFederate extends BaseFederate {
         currentGeneratedNumberOfCars += newCars.size();
     }
     @Override
-    protected BaseFederateAmbassador newFedAmb(){
+    protected BaseFederateAmbassador returnNewFederateAmbassador(){
         return new StatisticsFederateAmbassador(this);
     }
 
@@ -150,4 +140,32 @@ public class StatisticsFederate extends BaseFederate {
         ArrayList<Integer> arrayList = tmpArray;
         return arrayList.stream().map(String::valueOf).collect(Collectors.joining(","));
     }
+
+    @Override
+    protected void lastActionBeforeDestroy() throws RTIexception {
+        Integer queue1Sum = 0;
+        Integer queue2Sum = 0;
+
+        for (int i = 0; i<Queue1Size.size(); i++) {
+            queue1Sum += Queue1Size.get(i);
+            queue2Sum += Queue2Size.get(i);
+        }
+
+        System.out.println("==========================================================");
+        System.out.println("======================Wyniki==============================");
+        System.out.println("Srednia długość kolejki 1: " + queue1Sum / Queue1Size.size());
+        System.out.println("Srednia długość kolejki 2: " + queue2Sum / Queue2Size.size());
+        System.out.println("==========================================================");
+    }
+
+    @Override
+    protected void addPublicationsAndSubscriptions() throws RTIexception {
+        addSubscription("HLAinteractionRoot.Car.SendCarData", "sendCarData");
+        addSubscription("HLAinteractionRoot.Queue.SendQueueData", "sendQueueData");
+        addSubscription("HLAinteractionRoot.Bridge.SendBridgeData", "sendBridgeData");
+        addSubscription("HLAinteractionRoot.Car.WeWantToDriveThrough", "weWantToDriveThrough");
+
+        addPublication("HLAinteractionRoot.Statistics.SendStats", "sendStats");
+    }
+
 }

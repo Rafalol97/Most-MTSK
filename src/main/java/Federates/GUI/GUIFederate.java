@@ -50,13 +50,13 @@ public class GUIFederate extends BaseFederate {
 
     @Override
     protected void addPublicationsAndSubscriptions() throws RTIexception {
-        addSubscription("HLAinteractionRoot.CarCalls.SendCarData", "sendCarData");
-        addSubscription("HLAinteractionRoot.StatisticsCalls.SendStats", "sendStats");
-        addSubscription("HLAinteractionRoot.BridgeCalls.StopQueue", "stopQueue");
+        addSubscription("HLAinteractionRoot.Car.SendCarData", "sendCarData");
+        addSubscription("HLAinteractionRoot.Statistics.SendStats", "sendStats");
+        addSubscription("HLAinteractionRoot.Bridge.StopQueue", "stopQueue");
     }
 
     @Override
-    protected BaseFederateAmbassador newFedAmb() {
+    protected BaseFederateAmbassador returnNewFederateAmbassador() {
         return new GUIFederateAmbassador(this);
     }
 

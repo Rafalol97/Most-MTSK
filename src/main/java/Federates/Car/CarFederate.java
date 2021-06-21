@@ -101,14 +101,14 @@ public class CarFederate extends BaseFederate{
 
     @Override
     protected void addPublicationsAndSubscriptions() throws RTIexception {
-        addPublication("HLAinteractionRoot.CarCalls.WeWantToDriveThrough", "weWantToDriveThrough");
-        addPublication("HLAinteractionRoot.CarCalls.IEnteredTheBridge", "iEnteredTheBridge");
-        addPublication("HLAinteractionRoot.CarCalls.ILeftTheBridge", "iLeftTheBridge");
+        addPublication("HLAinteractionRoot.Car.WeWantToDriveThrough", "weWantToDriveThrough");
+        addPublication("HLAinteractionRoot.Car.IEnteredTheBridge", "iEnteredTheBridge");
+        addPublication("HLAinteractionRoot.Car.ILeftTheBridge", "iLeftTheBridge");
 
-        addPublication("HLAinteractionRoot.CarCalls.SendCarData", "sendCarData");
+        addPublication("HLAinteractionRoot.Car.SendCarData", "sendCarData");
 
-        addSubscription("HLAinteractionRoot.QueueCalls.YouCanDriveThrough","youCanDriveThrough");
-        addSubscription("HLAinteractionRoot.QueueCalls.ResetLastSpeed","resetLastSpeed");
+        addSubscription("HLAinteractionRoot.Queue.YouCanDriveThrough","youCanDriveThrough");
+        addSubscription("HLAinteractionRoot.Queue.ResetLastSpeed","resetLastSpeed");
     }
 
     public void carWithIdCanGo(HashMap<String, String> parameters) throws RTIexception {
@@ -170,7 +170,7 @@ public class CarFederate extends BaseFederate{
 
 
     @Override
-    protected BaseFederateAmbassador newFedAmb(){
+    protected BaseFederateAmbassador returnNewFederateAmbassador(){
         return new CarFederateAmbassador(this);
     }
 
