@@ -7,12 +7,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import models.Car;
 
@@ -45,14 +47,27 @@ public class BridgeGUI extends Application {
             Pane pane = guiController.bridge;
             pane.getChildren().clear();
             if(cars !=null && cars.size()!=0) {
-                Rectangle[] rect = new Rectangle[cars.size()];
+                Node[] rect = new Node[cars.size()*2];
                 for (int i = 0; i < cars.size(); i++) {
                     rect[i] = addToPaneOnPosition(cars.get(i), pane);
+                }
+                for (int i = cars.size(); i < cars.size()*2; i++) {
+                    rect[i] = addToPaneOnPositionText(cars.get(i-cars.size()), pane);
                 }
                 Group root = new Group(rect);
                 pane.getChildren().setAll(root);
             }
         });
+    }
+
+    private static Text addToPaneOnPositionText(Car car, Pane pane){
+        if(car.getSide()==0){
+            return new Text(pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength)), 20,Integer.toString(car.getId()));
+        }
+        else{
+            return new Text( pane.getWidth() - (pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength))), (pane.getHeight()-20-40),Integer.toString(car.getId()));
+        }
+
     }
 
     private static Rectangle addToPaneOnPosition(Car car, Pane pane){
