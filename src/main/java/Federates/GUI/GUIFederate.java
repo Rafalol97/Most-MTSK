@@ -82,7 +82,8 @@ public class GUIFederate extends BaseFederate {
         ArrayList<Integer> tmpArray = new ArrayList<>();
         for(String string:tmpStringArray)
         {
-            tmpArray.add(Integer.parseInt(string));
+            if(string != "null")
+                tmpArray.add(Integer.parseInt(string));
         }
         return tmpArray;
     }
