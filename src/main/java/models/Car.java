@@ -46,10 +46,21 @@ public class Car {
             returnCarList.add(cars.get(id));
         }
         ArrayList<String> stringsToSend = new ArrayList<>();
-        stringsToSend.add(returnCarList.stream().map(Car::getId).collect(Collectors.toList()).stream().map(String::valueOf).collect(Collectors.joining(",")));
-        stringsToSend.add(returnCarList.stream().map(Car::getSpeed).collect(Collectors.toList()).stream().map(String::valueOf).collect(Collectors.joining(",")));
-        stringsToSend.add(returnCarList.stream().map(Car::getCurrentState).collect(Collectors.toList()).stream().map(String::valueOf).collect(Collectors.joining(",")));
-        stringsToSend.add(returnCarList.stream().map(Car::getSide).collect(Collectors.toList()).stream().map(String::valueOf).collect(Collectors.joining(",")));
+        ArrayList<Integer> tmpIdsList = new ArrayList<>();
+        ArrayList<Integer> tmpSidesList = new ArrayList<>();
+        ArrayList<Double> tmpCurrentStateList = new ArrayList<>();
+        ArrayList<Double> tmpSpeedList = new ArrayList<>();
+        for (Car car: returnCarList)
+        {
+            tmpIdsList.add(car.getId());
+            tmpSidesList.add(car.getSide());
+            tmpCurrentStateList.add(car.getCurrentState());
+            tmpSpeedList.add(car.getSpeed());
+        }
+        stringsToSend.add(tmpIdsList.stream().map(String::valueOf).collect(Collectors.joining(",")));
+        stringsToSend.add(tmpSpeedList.stream().map(String::valueOf).collect(Collectors.joining(",")));
+        stringsToSend.add(tmpCurrentStateList.stream().map(String::valueOf).collect(Collectors.joining(",")));
+        stringsToSend.add(tmpSidesList.stream().map(String::valueOf).collect(Collectors.joining(",")));
         return stringsToSend;
     }
 
