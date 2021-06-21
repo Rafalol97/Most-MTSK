@@ -60,7 +60,7 @@ public class BridgeGUI extends Application {
             return new Rectangle(pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength)), 20,40,30);
         }
         else{
-            return new Rectangle( pane.getWidth() - (pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength))), 20, 40  , 30);
+            return new Rectangle( pane.getWidth() - (pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength))), (pane.getHeight()-20-40), 40  , 30);
         }
 
     }
