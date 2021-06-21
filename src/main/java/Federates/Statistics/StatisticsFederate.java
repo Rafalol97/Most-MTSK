@@ -42,7 +42,7 @@ public class StatisticsFederate extends BaseFederate {
     }
 
     @Override
-    protected void toDoInEachIteration() throws RTIexception {
+    protected void iterationSequence() throws RTIexception {
         if(this.fedamb.getFederateTime() > 2.0) {
             StartedCarsSize.add(tmpStartedCarSize);
             Queue1Size.add(tmpQueue1Size);
@@ -123,12 +123,6 @@ public class StatisticsFederate extends BaseFederate {
         }
         currentGeneratedNumberOfCars += newCars.size();
     }
-
-    @Override
-    protected void lastTaskBeforeDestroy() {
-        logMe("Q1S: " +Queue1Size + " Q2S: " +Queue2Size + " LTIMER: " +LightsTimer+ " SIDE: " + BridgeSide);
-    }
-
     @Override
     protected BaseFederateAmbassador newFedAmb(){
         return new StatisticsFederateAmbassador(this);

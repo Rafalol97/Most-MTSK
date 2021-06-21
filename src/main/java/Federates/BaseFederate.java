@@ -187,7 +187,7 @@ public abstract class BaseFederate
 
         log("Published and Subscribed");
         for (int i = 0; i < MAX_ITERATIONS; i++) {
-            toDoInEachIteration();
+            iterationSequence();
 
             ArrayList<InteractionToBeSend> tempInteractions = (ArrayList<InteractionToBeSend>) interactionsToSend.clone();
             interactionsToSend.clear();
@@ -201,7 +201,6 @@ public abstract class BaseFederate
                 Thread.sleep(ITERATION_DELAY);
             }
         }
-        lastTaskBeforeDestroy();
 
         rtiamb.resignFederationExecution(ResignAction.DELETE_OBJECTS);
         log("Resigned from Federation");
@@ -390,8 +389,5 @@ public abstract class BaseFederate
     protected abstract void addPublicationsAndSubscriptions() throws RTIexception;
     protected abstract BaseFederateAmbassador newFedAmb();
     protected abstract void initializeFederate();
-    protected abstract void toDoInEachIteration() throws RTIexception;
-    protected void lastTaskBeforeDestroy(){
-
-    }
+    protected abstract void iterationSequence() throws RTIexception;
 }

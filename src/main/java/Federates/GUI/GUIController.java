@@ -86,5 +86,6 @@ public class GUIController  implements Initializable {
     }
 
     public void reload(Event event) {
+        BridgeGUI.reloadStatistics();
     }
 }

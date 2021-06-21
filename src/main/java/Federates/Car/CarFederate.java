@@ -38,7 +38,7 @@ public class CarFederate extends BaseFederate{
     }
 
     @Override
-    protected void toDoInEachIteration() throws RTIexception {
+    protected void iterationSequence() throws RTIexception {
         //GENERATE CARS
         if(this.fedamb.getFederateTime() > this.nextTimeToGenerateCars)
         {

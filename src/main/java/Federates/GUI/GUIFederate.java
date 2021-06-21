@@ -3,6 +3,7 @@ package Federates.GUI;
 import Federates.BaseFederate;
 import Federates.BaseFederateAmbassador;
 import Federates.Bridge.BridgeFederate;
+import Utils.Constants;
 import hla.rti1516e.exceptions.RTIexception;
 import javafx.application.Platform;
 import models.Car;
@@ -34,10 +35,10 @@ public class GUIFederate extends BaseFederate {
     }
 
     @Override
-    protected void toDoInEachIteration() throws RTIexception {
+    protected void iterationSequence() throws RTIexception {
         BridgeGUI.addSqToBridgePane(cars);
         iteration++;
-        if(iteration % 5 ==0){
+        if(iteration % Constants.GUI_STATISTICS_UPDATE_INTERVAL==0){
             BridgeGUI.updateStatistics(Queue1Size,Queue2Size,OverallQueue1Size,OverallQueue2Size,GeneratedCars,LightsTimer,StartedCarsSize);
         }
         if(Queue1Size!=null && Queue2Size !=null && Queue1Size.size()>0 && Queue2Size.size()>0) {

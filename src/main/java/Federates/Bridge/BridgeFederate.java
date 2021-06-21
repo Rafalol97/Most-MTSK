@@ -28,7 +28,7 @@ public class BridgeFederate extends BaseFederate{
     }
 
     @Override
-    protected void toDoInEachIteration() throws RTIexception {
+    protected void iterationSequence() throws RTIexception {
         if(lightsTimer > 0  && carsOnBridge == 0)
         {
             logMe("MOST: wysylam status wolnego mostu z idkierunku: " + currentLights);

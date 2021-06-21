@@ -32,7 +32,7 @@ public class QueueFederate extends BaseFederate{
     }
 
     @Override
-    protected void toDoInEachIteration() throws RTIexception {
+    protected void iterationSequence() throws RTIexception {
         if(recivedCars.size() != 0)
         {
             logMe("KOLEJKA: Dodaje samochody w kolejce: " + recivedCars.toString());

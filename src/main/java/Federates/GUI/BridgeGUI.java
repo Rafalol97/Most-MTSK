@@ -35,6 +35,14 @@ public class BridgeGUI extends Application {
     public static String Grey = "#ababab";
     public static int Side = 0;
 
+    public static ArrayList<Integer> Queue1Size = new ArrayList<>();
+    public static ArrayList<Integer> Queue2Size = new ArrayList<>();
+    public static Integer OverallQueue1Size = 0;
+    public static Integer OverallQueue2Size = 0;
+    public static ArrayList<Integer> GeneratedCars = new ArrayList<>();
+    public static ArrayList<Integer> LightsTimer = new ArrayList<>();
+    public static ArrayList<Integer> StartedCarsSize = new ArrayList<>();
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -110,16 +118,25 @@ public class BridgeGUI extends Application {
 
     }
 
-    public static void updateStatistics(ArrayList<Integer> Queue1Size, ArrayList<Integer> Queue2Size,
-                                        Integer OverallQueue1Size, Integer OverallQueue2Size,
-                                        ArrayList<Integer> GeneratedCars, ArrayList<Integer> lightsTimer,
+    public static void updateStatistics(ArrayList<Integer> queue1Size, ArrayList<Integer> queue2Size,
+                                        Integer overallQueue1Size, Integer overallQueue2Size,
+                                        ArrayList<Integer> generatedCars, ArrayList<Integer> lightsTimer,
                                         ArrayList<Integer> startedCarsSize) {
-        Platform.runLater(() -> {
-            QueueSizeBarChart(Queue1Size, Queue2Size);
-            StartedCarsBarChart(lightsTimer, startedCarsSize);
-            OverallQueueSizePieChart(OverallQueue1Size, OverallQueue2Size);
-            GeneratedCarsLineChart(GeneratedCars);
-        });
+        Queue1Size = queue1Size;
+        Queue2Size = queue2Size;
+        OverallQueue1Size = overallQueue1Size;
+        OverallQueue2Size = overallQueue2Size;
+        GeneratedCars = generatedCars;
+        LightsTimer = lightsTimer;
+        StartedCarsSize = startedCarsSize;
+
+    }
+
+    public static void reloadStatistics(){
+        QueueSizeBarChart(Queue1Size, Queue2Size);
+        StartedCarsBarChart(LightsTimer, StartedCarsSize);
+        OverallQueueSizePieChart(OverallQueue1Size, OverallQueue2Size);
+        GeneratedCarsLineChart(GeneratedCars);
     }
 
     public static void QueueSizeBarChart(ArrayList<Integer> Queue1Size, ArrayList<Integer> Queue2Size) {
@@ -147,7 +164,6 @@ public class BridgeGUI extends Application {
         );
         guiController.pc.getData().clear();
         guiController.pc.setData(pieChartData);
-        guiController.pc.setStartAngle(180);
 
     }
 
