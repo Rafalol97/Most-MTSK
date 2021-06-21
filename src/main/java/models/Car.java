@@ -66,12 +66,12 @@ public class Car {
 
     public static ArrayList<Car> makeCarModel(String carIdsString,String speedString, String currentStateString, String directionIdsString)
     {
+        if(carIdsString==null || carIdsString.isEmpty()) return null;
         ArrayList<Car> receivedCars = new ArrayList<>();
         String[] carsIds = carIdsString.split(",");
         String[] directionIds = directionIdsString.split(",");
         String[] speedStrings = speedString.split(",");
         String[] currentStateStrings = currentStateString.split(",");
-
         for(int i = 0; i < carsIds.length; i++) {
             receivedCars.add(new Car(Integer.parseInt(carsIds[i]),Double.parseDouble(speedStrings[i]),Double.parseDouble(currentStateStrings[i]), Integer.parseInt(directionIds[i])));
         }

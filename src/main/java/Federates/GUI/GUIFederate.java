@@ -14,6 +14,7 @@ import java.util.HashMap;
 public class GUIFederate extends BaseFederate {
 
     public ArrayList<Car> cars;
+    public Integer iteration = 0;
 
     public ArrayList<Integer> StartedCarsSize = new ArrayList<>();
     public Integer OverallQueue1Size = 0;
@@ -34,8 +35,11 @@ public class GUIFederate extends BaseFederate {
 
     @Override
     protected void toDoInEachIteration() throws RTIexception {
-
         BridgeGUI.addSqToBridgePane(cars);
+        iteration++;
+        if(iteration % 5 ==0){
+            BridgeGUI.updateStatistics(Queue1Size,Queue2Size,OverallQueue1Size,OverallQueue2Size,GeneratedCars,LightsTimer,StartedCarsSize);
+        }
 
     }
 
@@ -55,9 +59,6 @@ public class GUIFederate extends BaseFederate {
     }
 
     public void receiveStats(HashMap<String, String> parameters) {
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"+parameters.get("StartedCarsSize"));
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"+parameters.get("OverallQueue1Size"));
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"+parameters.get("Queue1Size"));
         StartedCarsSize = makeArray(parameters.get("StartedCarsSize").split(","));
         OverallQueue1Size = Integer.parseInt(parameters.get("OverallQueue1Size"));
         OverallQueue2Size = Integer.parseInt(parameters.get("OverallQueue2Size"));
@@ -82,11 +83,11 @@ public class GUIFederate extends BaseFederate {
 
     public ArrayList<Integer> makeArray(String[] tmpStringArray)
     {
+        if(tmpStringArray[0].isEmpty())return null;
         ArrayList<Integer> tmpArray = new ArrayList<>();
         for(String string:tmpStringArray)
         {
-            if(string != "null")
-                tmpArray.add(Integer.parseInt(string));
+            tmpArray.add(Integer.parseInt(string));
         }
         return tmpArray;
     }

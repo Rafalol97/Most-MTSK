@@ -22,7 +22,6 @@ public class GUIFederateAmbassador extends BaseFederateAmbassador {
                                    OrderType receivedOrdering,
                                    SupplementalReceiveInfo receiveInfo)
             throws FederateInternalError {
-        System.out.println(interactionClass.toString());
         try {
             if (interactionClass.equals(federate.getInteractionClassHandle("sendCarData").getInteraction())) {
                 ((GUIFederate) federate).receiveStartedcars(castParametersToString(theParameters, "sendCarData"));

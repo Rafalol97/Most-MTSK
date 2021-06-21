@@ -19,8 +19,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-import static Utils.Constants.FEDERATION_NAME;
-import static Utils.Constants.MAX_ITERATIONS;
+import static Utils.Constants.*;
 
 
 @Getter
@@ -197,6 +196,10 @@ public abstract class BaseFederate
             }
 
             advanceTime(1.0);
+
+            if(USE_DELAY){
+                Thread.sleep(ITERATION_DELAY);
+            }
         }
         lastTaskBeforeDestroy();
 

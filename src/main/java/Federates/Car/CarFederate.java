@@ -84,7 +84,7 @@ public class CarFederate extends BaseFederate{
                 logMe("AUTA: jedzie auto nr: " + id);
                 Car tmpCar = cars.get(id);
                 tmpCar.setCurrentState(tmpCar.getCurrentState() + tmpCar.getSpeed());
-                if(tmpCar.getCurrentState() > Constants.bridgeLenght)
+                if(tmpCar.getCurrentState() > Constants.bridgeLength)
                 {
                     logMe("AUTA: skonczylem auto nr: " + id);
                     sendILeftTheBridge(); //wyslij do mostu ze skonczylem
