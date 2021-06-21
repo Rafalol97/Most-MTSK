@@ -23,5 +23,8 @@ public class SimulationStarter {
 
         initializer = new Thread(() -> GUIFederate.main(new String[]{"GUIFederate"}));
         initializer.start();
+
+        BridgeGUI bridgeGUI = new BridgeGUI();
+        BridgeGUI.main(new String[]{"hehe"});
     }
 }

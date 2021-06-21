@@ -4,6 +4,7 @@ import Federates.BaseFederateAmbassador;
 import hla.rti1516e.*;
 import hla.rti1516e.exceptions.FederateInternalError;
 import hla.rti1516e.exceptions.RTIexception;
+import org.apache.http.cookie.params.CookieSpecPNames;
 
 public class GUIFederateAmbassador extends BaseFederateAmbassador {
 
@@ -21,7 +22,7 @@ public class GUIFederateAmbassador extends BaseFederateAmbassador {
                                    OrderType receivedOrdering,
                                    SupplementalReceiveInfo receiveInfo)
             throws FederateInternalError {
-
+        System.out.println(interactionClass.toString());
         try {
             if (interactionClass.equals(federate.getInteractionClassHandle("sendCarData").getInteraction())) {
                 ((GUIFederate) federate).receiveStartedcars(castParametersToString(theParameters, "sendCarData"));

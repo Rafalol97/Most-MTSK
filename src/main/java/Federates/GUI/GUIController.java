@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.input.TouchEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
@@ -15,8 +16,13 @@ import java.util.ResourceBundle;
 public class GUIController  implements Initializable {
 
     @FXML
+    public Pane bridge;
+
+    @FXML
     private AnchorPane anchorStat;
 
+    @FXML
+    private AnchorPane anchorSim;
 
 
     @Override

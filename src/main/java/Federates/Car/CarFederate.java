@@ -146,9 +146,9 @@ public class CarFederate extends BaseFederate{
         byte[] carCurrentStates = encoderFactory.createHLAASCIIstring(startedCars.get(2)).toByteArray();
         byte[] carSides = encoderFactory.createHLAASCIIstring(startedCars.get(3)).toByteArray();
         parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carIds"),carsIdsBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carSpeeds"),carsIdsBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carCurrentStates"),carsIdsBytes);
-        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carSides"),carsIdsBytes);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carSpeeds"),carSpeeds);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carCurrentStates"),carCurrentStates);
+        parameters.put(rtiamb.getParameterHandle(getInteractionClassHandle("sendCarData").getInteraction(),"carSides"),carSides);
         interactionsToSend.add(new InteractionToBeSend(getInteractionClassHandle("sendCarData").getInteraction(),parameters));
     }
 
