@@ -55,6 +55,9 @@ public class GUIFederate extends BaseFederate {
     }
 
     public void receiveStats(HashMap<String, String> parameters) {
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"+parameters.get("StartedCarsSize"));
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"+parameters.get("OverallQueue1Size"));
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"+parameters.get("Queue1Size"));
         StartedCarsSize = makeArray(parameters.get("StartedCarsSize").split(","));
         OverallQueue1Size = Integer.parseInt(parameters.get("OverallQueue1Size"));
         OverallQueue2Size = Integer.parseInt(parameters.get("OverallQueue2Size"));

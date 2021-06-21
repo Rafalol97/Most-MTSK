@@ -43,12 +43,14 @@ public class StatisticsFederate extends BaseFederate {
 
     @Override
     protected void toDoInEachIteration() throws RTIexception {
-        StartedCarsSize.add(tmpStartedCarSize);
-        Queue1Size.add(tmpQueue1Size);
-        Queue2Size.add(tmpQueue2Size);
-        LightsTimer.add(tmpLightsTimer);
-        BridgeSide.add(tmpBridgeSide);
-        GeneratedCars.add(currentGeneratedNumberOfCars);
+        if(this.fedamb.getFederateTime() > 2.0) {
+            StartedCarsSize.add(tmpStartedCarSize);
+            Queue1Size.add(tmpQueue1Size);
+            Queue2Size.add(tmpQueue2Size);
+            LightsTimer.add(tmpLightsTimer);
+            BridgeSide.add(tmpBridgeSide);
+            GeneratedCars.add(currentGeneratedNumberOfCars);
+        }
         SendStats(
                 makeString(StartedCarsSize),
                 OverallQueue1Size.toString(),
