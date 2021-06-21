@@ -54,10 +54,41 @@ public class BridgeGUI extends Application {
                 for (int i = cars.size(); i < cars.size()*2; i++) {
                     rect[i] = addToPaneOnPositionText(cars.get(i-cars.size()), pane);
                 }
-                Group root = new Group(rect);
-                pane.getChildren().setAll(root);
+                //Group root = new Group(rect);
+                pane.getChildren().setAll(rect);
+                /*ObservableList<Node> nodes = pane.getChildren();
+                for (int i = 0; i < cars.size(); i++) {
+                    while(getCurrentPosition(cars.get(i), pane) >  (nodes.get(i)).getTranslateX())
+                    {
+                        System.out.println("dsjaidjasdjaisodjasiodasjidjasioajsdisaiojidoas");
+                        if(cars.get(i).getSide()==0) {
+                            (nodes.get(i)).setTranslateX(((Rectangle)nodes.get(i)).getTranslateX() + 1);
+                        }
+                        else {
+                            (nodes.get(i)).setTranslateX(((Rectangle)nodes.get(i)).getTranslateX() - 1);
+                        }
+                    }
+                    try {
+                        Thread.sleep(20);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    //pane.getChildren().clear();
+                    //pane.getChildren().setAll(rect);
+                }*/
             }
         });
+    }
+
+    private static double getCurrentPosition(Car car, Pane pane)
+    {
+        if(car.getSide()==0){
+            return pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength));
+        }
+        else{
+            return pane.getWidth() - (pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength)));
+        }
     }
 
     private static Text addToPaneOnPositionText(Car car, Pane pane){
@@ -72,10 +103,10 @@ public class BridgeGUI extends Application {
 
     private static Rectangle addToPaneOnPosition(Car car, Pane pane){
         if(car.getSide()==0){
-            return new Rectangle(pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength)), 20,40,30);
+            return new Rectangle(pane.getWidth() * ((car.getCurrentState())/(Constants.bridgeLength)), 20,40,30);
         }
         else{
-            return new Rectangle( pane.getWidth() - (pane.getWidth() * (car.getCurrentState()/(Constants.bridgeLength))), (pane.getHeight()-20-40), 40  , 30);
+            return new Rectangle( pane.getWidth() - (pane.getWidth() * ((car.getCurrentState())/(Constants.bridgeLength))), (pane.getHeight()-20-40), 40  , 30);
         }
 
     }
